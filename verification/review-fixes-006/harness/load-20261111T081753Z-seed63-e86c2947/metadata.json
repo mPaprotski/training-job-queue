@@ -1,0 +1,86 @@
+{
+  "run_id": "load-20261111T081753Z-seed63-e86c2947",
+  "seed": 63,
+  "database": "chaos_3686e0b726c44cc4892031663dade0e3",
+  "parameters": {
+    "profile": "create",
+    "rps": 100,
+    "warmup": 10,
+    "duration": 60,
+    "seed": 63,
+    "workers": 16,
+    "pool": "on",
+    "pool_size": 4,
+    "max_outstanding_jobs": 1000,
+    "concurrency": 128,
+    "timeout": 600.0,
+    "drain_timeout": 120.0,
+    "output_dir": "/out",
+    "keep_database": false,
+    "jobs": 7050,
+    "lease_seconds": 15,
+    "heartbeat_seconds": 3
+  },
+  "python": "3.12.16 (main, Nov  5 2026, 07:58:44) [GCC 12.2.0]",
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.36",
+  "cpus_visible": 8,
+  "source_revision": "90cab34-plus-local-slot-fixes",
+  "source_files_sha256": {
+    "requirements.txt": "6d43c002daeacbd072397ab67d1148a03990329a2aaeaab32ed23b49494d0da1",
+    "pyproject.toml": "63873331ac30162e0243a2284fcb4ca981e15e6fc3748bba27a1bd43a9485a85",
+    "src/training_job_queue/__init__.py": "c1b6a2c9ece8cd72583f2d0b8791ed47e199e6d2ef645ac72ee0cb50c6b05be4",
+    "src/training_job_queue/api.py": "3c98a32bbdbfaa9055efba849c4729727ec24b93121f3ec0ea718219278fc53f",
+    "src/training_job_queue/body_limit.py": "c367a2fc42c79bd300413795bcf5b6c6396f05d66904a24e63b472ab0d616985",
+    "src/training_job_queue/db.py": "b32e76d07fdd7f8ed612f97c90a915e9b620edf199a8f590cbce9dc2bfcefc92",
+    "src/training_job_queue/jobs.py": "b552c7decba7b6281caa250e189ce32a1931df58d70d0baef93b6a525c2d6ded",
+    "src/training_job_queue/migrate.py": "bd6fcf91acdc6686be2ceda573dde47dfc61c9c1415f7dea8fed976ec9730963",
+    "src/training_job_queue/models.py": "fbcb51caf42d92735a3b3961cc01191e2ef8062e97d89088112071f47b2d4160",
+    "src/training_job_queue/permissions.py": "d66d19fd8bb26516f5d911d39de4f00d7a72de2a09bb83d35ed8029a74863e9a",
+    "src/training_job_queue/processing.py": "37604fcccba83d3c94b97c00dc030a9b2fd031b3c57a545e3f180b91b8338eaa",
+    "src/training_job_queue/settings.py": "ef3902abfc4397efc258606c580e1a54b730962c3800f7371328b2c44990c455",
+    "src/training_job_queue/worker.py": "f2c4ee487b91e422a1a60140633941908ecfc97e3345c89dc213b9778de5b6be",
+    "harness/__init__.py": "ce9ce2cd9c99e8529ac173b189274f430132c1ef2bd0385d2a6a83f5c9eb1d89",
+    "harness/chaos.py": "743f6c32641e4a42b50907e0c4dfef6fc367455d1a141aed3b3c5c43822365ec",
+    "harness/docker_stats.py": "b26497c994e696571ea17688b5ade1c6c11e61441cd74d4fbde362740fca5b6e",
+    "harness/invariants.py": "e26e05367519711b2acf6c60ad5c4f3c95a8a8dbc836077dd29b732f76b9e56e",
+    "harness/load.py": "d8a7a3016bc15e2f441eaaa095d3c42d288eabfcc16022bb55249b0563223630",
+    "migrations/0001_job_schema.sql": "a0d35484dcec9a402c8655adc74ded39f0770446b0d787101c97cb916c380d27",
+    "migrations/0002_outstanding_index.sql": "62fe311b4d88a8a3f6fc33c78b023c79faf26a33e13850eda6fb1b60d19f913b",
+    "migrations/0003_admission_slots.sql": "f9c6dd35d797801b827f4198c8a1cd7a52f023b3ad28c234df2aacfe026b1937"
+  },
+  "packages": {
+    "fastapi": "0.162.4",
+    "starlette": "1.10.0",
+    "uvicorn": "0.54.0",
+    "psycopg": "3.3.8"
+  },
+  "runtime_role": {
+    "name": "queue_runtime",
+    "rolsuper": false,
+    "rolcreatedb": false,
+    "rolcreaterole": false
+  },
+  "postgres": "PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit",
+  "deployment_settings": {
+    "workers": 16,
+    "lease_seconds": 15,
+    "heartbeat_seconds": 3,
+    "poll_seconds": 1,
+    "simulation_seconds": 0.1,
+    "max_outstanding_jobs": 1000,
+    "pool_enabled": true,
+    "api_pool_size": 4,
+    "worker_pool_size": 1,
+    "pool_wait_seconds": 1
+  },
+  "cgroup": {
+    "cpu.max": "max 100000",
+    "memory.max": "max",
+    "memory.current": "128933888"
+  },
+  "meminfo": [
+    "MemTotal:       15878088 kB",
+    "MemFree:          766060 kB",
+    "MemAvailable:    3519264 kB"
+  ]
+}

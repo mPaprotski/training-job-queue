@@ -1,0 +1,93 @@
+{
+  "run_id": "load-20261111T081516Z-seed61-2bf26d95",
+  "passed": true,
+  "expected_jobs": 1450,
+  "actual_jobs": 1450,
+  "states": {
+    "cancelled": 6,
+    "succeeded": 1444
+  },
+  "attempts": {
+    "cancelled": 4,
+    "succeeded": 1444
+  },
+  "effects": 1444,
+  "violations": [],
+  "metrics": {
+    "offered_requests": 6000,
+    "issued_requests": 6000,
+    "issued_within_window_rps": 100.0,
+    "errors_including_drops": 0,
+    "error_fraction": 0.0,
+    "dropped_requests": 0,
+    "admission_rejections": 0,
+    "acknowledged_measurement_creations": 1200,
+    "scheduled_latency_seconds": {
+      "p50": 0.005470563002745621,
+      "p95": 0.0225463589958963,
+      "p99": 0.03641801900084829
+    },
+    "response_seconds": {
+      "p50": 0.00518339599511819,
+      "p95": 0.0217938539935858,
+      "p99": 0.0356129450010485
+    },
+    "dispatch_lag_seconds": {
+      "p50": 0.00026847499975701794,
+      "p95": 0.0006079529994167387,
+      "p99": 0.0015063240061863326
+    },
+    "job_completion_seconds": {
+      "p50": 0.186346,
+      "p95": 0.281144,
+      "p99": 0.367586
+    },
+    "job_latency_samples": 1198,
+    "measurement_job_states": {
+      "cancelled": 2,
+      "succeeded": 1198
+    },
+    "queue_growth": 0,
+    "peak_queue": 4,
+    "after_requests": {
+      "queued": 0,
+      "running": 2,
+      "succeeded": 1442,
+      "cancelled": 6,
+      "oldest_queued_seconds": 0.0,
+      "db_connections": 9,
+      "elapsed": 70.0355511700036
+    },
+    "drain_seconds": 0.2727683939956478,
+    "drain_timed_out": false,
+    "peak_application_rss_bytes": 262402048,
+    "peak_db_connections": 9,
+    "statuses": {
+      "200": 4207,
+      "201": 1200,
+      "409": 593
+    },
+    "average_application_cpu_cores": 0.5132504565540614
+  },
+  "invariants_passed": true,
+  "criteria": {
+    "exact_offered_count": true,
+    "target_rps": true,
+    "no_generator_drops": true,
+    "error_fraction_le_0_001": true,
+    "scheduled_p95_le_0_5s": true,
+    "scheduled_p99_le_1s": true,
+    "dispatch_p95_le_0_05s": true,
+    "queue_growth_le_20": true,
+    "oldest_queued_le_2s": true,
+    "job_completion_p95_le_5s": true,
+    "drain_le_60s": true,
+    "drain_completed": true
+  },
+  "benchmark_passed": true,
+  "counters": {},
+  "errors": [],
+  "database": "chaos_714f5cd13d0248aea3a53be75faa35cf",
+  "database_retained": false,
+  "elapsed_seconds": 75.735
+}

@@ -1,0 +1,12 @@
+test_malformed_json_is_rejected (test_load.LoadCancellationTests.test_malformed_json_is_rejected) ... ok
+test_matching_cancelled_job_is_accepted (test_load.LoadCancellationTests.test_matching_cancelled_job_is_accepted) ... ok
+test_missing_id_is_rejected (test_load.LoadCancellationTests.test_missing_id_is_rejected) ... ok
+test_non_cancelled_state_is_rejected (test_load.LoadCancellationTests.test_non_cancelled_state_is_rejected) ... ok
+test_other_job_is_rejected_and_both_ids_are_logged (test_load.LoadCancellationTests.test_other_job_is_rejected_and_both_ids_are_logged) ... ok
+test_server_error_is_rejected (test_load.LoadCancellationTests.test_server_error_is_rejected) ... ok
+test_terminal_conflict_is_accepted_without_recording_cancellation (test_load.LoadCancellationTests.test_terminal_conflict_is_accepted_without_recording_cancellation) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.006s
+
+OK

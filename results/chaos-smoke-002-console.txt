@@ -1,0 +1,13 @@
+Run artifacts: results/chaos-20261109T215907Z-seed20261110-0c5fe935
+{"phase": "faults", "elapsed": 2.4, "states": {"queued": 3}, "sigkills": 0}
+{"phase": "faults", "elapsed": 7.5, "states": {"cancelled": 8, "running": 2, "queued": 175, "succeeded": 6}, "sigkills": 2}
+{"phase": "faults", "elapsed": 12.4, "states": {"cancelled": 17, "running": 4, "queued": 363, "succeeded": 59}, "sigkills": 4}
+{"phase": "faults", "elapsed": 17.4, "states": {"succeeded": 131, "cancelled": 27, "queued": 604, "running": 5}, "sigkills": 6}
+{"phase": "drain", "elapsed": 21.3, "states": {"succeeded": 211, "cancelled": 34, "queued": 752, "running": 3}, "sigkills": 8}
+{"phase": "drain", "elapsed": 26.3, "states": {"succeeded": 362, "cancelled": 34, "queued": 597, "running": 7}, "sigkills": 8}
+{"phase": "drain", "elapsed": 31.5, "states": {"succeeded": 474, "cancelled": 34, "queued": 485, "running": 7}, "sigkills": 8}
+{"phase": "drain", "elapsed": 36.7, "states": {"succeeded": 624, "cancelled": 34, "queued": 336, "running": 6}, "sigkills": 8}
+{"phase": "drain", "elapsed": 41.7, "states": {"succeeded": 734, "cancelled": 34, "queued": 225, "running": 7}, "sigkills": 8}
+{"phase": "drain", "elapsed": 46.8, "states": {"succeeded": 821, "cancelled": 34, "queued": 139, "running": 6}, "sigkills": 8}
+{"phase": "drain", "elapsed": 52.1, "states": {"succeeded": 936, "cancelled": 34, "queued": 26, "running": 4}, "sigkills": 8}
+{"run_id": "chaos-20261109T215907Z-seed20261110-0c5fe935", "passed": true, "expected_jobs": 1000, "actual_jobs": 1000, "states": {"cancelled": 34, "succeeded": 966}, "attempts": {"succeeded": 966, "failed": 21, "cancelled": 13, "expired": 1}, "effects": 966, "violations": [], "counters": {"unique_posts": 1000, "cancel_accepted": 34, "cancel_requests": 44, "repeated_posts": 112, "sigkills": 8, "cancel_running_observed": 20, "cancel_too_late": 10, "sigkills_with_running_job": 1}, "errors": [], "database": "chaos_e27d06c90b2e4b9d96e030b1c0472ef6", "database_retained": false, "elapsed_seconds": 58.197}

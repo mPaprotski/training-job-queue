@@ -1,0 +1,15 @@
+test_attempt_shapes_and_identity (test_schema.SchemaTests.test_attempt_shapes_and_identity) ... ok
+test_cancel_queued_and_fail_running (test_schema.SchemaTests.test_cancel_queued_and_fail_running) ... ok
+test_concurrent_duplicate_keys (test_schema.SchemaTests.test_concurrent_duplicate_keys) ... ok
+test_duplicate_effect (test_schema.SchemaTests.test_duplicate_effect) ... ok
+test_effect_requires_existing_attempt (test_schema.SchemaTests.test_effect_requires_existing_attempt) ... ok
+test_fresh_migration_and_rerun (test_schema.SchemaTests.test_fresh_migration_and_rerun) ... ok
+test_invalid_job_shapes (test_schema.SchemaTests.test_invalid_job_shapes) ... ok
+test_only_one_running_attempt (test_schema.SchemaTests.test_only_one_running_attempt) ... ok
+test_retry_after_expired_attempt (test_schema.SchemaTests.test_retry_after_expired_attempt) ... ok
+test_valid_successful_lifecycle (test_schema.SchemaTests.test_valid_successful_lifecycle) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 1.407s
+
+OK

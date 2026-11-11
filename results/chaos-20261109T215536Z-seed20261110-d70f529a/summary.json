@@ -1,0 +1,28 @@
+{
+  "run_id": "chaos-20261109T215536Z-seed20261110-d70f529a",
+  "passed": true,
+  "expected_jobs": 1000,
+  "actual_jobs": 1000,
+  "states": {
+    "cancelled": 41,
+    "succeeded": 959
+  },
+  "attempts": {
+    "expired": 3,
+    "failed": 21,
+    "succeeded": 959
+  },
+  "effects": 959,
+  "violations": [],
+  "counters": {
+    "unique_posts": 1000,
+    "cancel_accepted": 42,
+    "cancel_requests": 50,
+    "repeated_posts": 114,
+    "sigkills": 7,
+    "cancel_too_late": 8,
+    "sigkills_with_running_job": 3
+  },
+  "errors": [],
+  "elapsed_seconds": 58.684
+}

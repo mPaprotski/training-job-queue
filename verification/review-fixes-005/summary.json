@@ -1,0 +1,28 @@
+{
+  "commit": "ef18db37b2976a110bbdae7a253202e1ac6d8fba",
+  "clone": "/tmp/soup-final-review-911-88b_4kvl/repo",
+  "project": "soup-final-88b_4k",
+  "image": "training-job-queue:final-88b_4k",
+  "override": "/tmp/soup-final-review-911-88b_4kvl/compose-override.yml",
+  "port": 18083,
+  "clean_before_checks": true,
+  "source_hashes_match": true,
+  "cache_available": true,
+  "original_service_untouched": true,
+  "passed": true,
+  "integration_tests": 83,
+  "unit_tests": 20,
+  "api_smoke": true,
+  "clean_after_checks": true,
+  "scratch_resources_removed": true,
+  "temporary_databases_removed": true,
+  "original_container_ids_unchanged": true,
+  "database_smoke": {
+    "migrations": 2,
+    "jobs": 2,
+    "effects": 1,
+    "succeeded": 1,
+    "cancelled": 1
+  },
+  "temporary_clone_removed": true
+}

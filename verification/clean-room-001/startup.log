@@ -1,0 +1,191 @@
+time="2026-11-10T15:59:00+03:00" level=warning msg="Docker Compose is configured to build using Bake, but buildx isn't installed"
+#0 building with "default" instance using docker driver
+
+#1 [migrate internal] load build definition from Dockerfile
+#1 transferring dockerfile:
+#1 transferring dockerfile: 508B 0.0s done
+#1 DONE 0.1s
+
+#2 [migrate internal] load metadata for docker.io/library/python:3.12-slim-bookworm
+#2 DONE 1.4s
+
+#3 [migrate internal] load .dockerignore
+#3 transferring context:
+#3 transferring context: 131B done
+#3 DONE 0.1s
+
+#4 [migrate  1/10] FROM docker.io/library/python:3.12-slim-bookworm@sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df
+#4 DONE 0.0s
+
+#5 [migrate internal] load build context
+#5 transferring context: 88.41kB 0.0s done
+#5 DONE 0.1s
+
+#6 [migrate  2/10] WORKDIR /app
+#6 CACHED
+
+#7 [migrate  3/10] COPY requirements.txt ./
+#7 CACHED
+
+#8 [migrate  4/10] RUN pip install --no-cache-dir -r requirements.txt
+#8 CACHED
+
+#9 [migrate  5/10] COPY pyproject.toml ./
+#9 CACHED
+
+#10 [migrate  6/10] COPY src ./src
+#10 CACHED
+
+#11 [migrate  7/10] RUN pip install --no-deps .
+#11 CACHED
+
+#12 [migrate  8/10] COPY migrations ./migrations
+#12 CACHED
+
+#13 [migrate  9/10] COPY harness ./harness
+#13 DONE 0.3s
+
+#14 [migrate 10/10] RUN useradd --create-home --uid 10001 app
+#14 DONE 1.0s
+
+#15 [migrate] exporting to image
+#15 exporting layers 0.0s done
+#15 writing image sha256:ea37080fd59a7a16915d5272b90def8475d239f12ba4f980b035b305ab9d1129 done
+#15 naming to docker.io/library/training-job-queue:review-04cfb49b done
+#15 DONE 0.1s
+
+#16 [migrate] resolving provenance for metadata file
+#16 DONE 0.0s
+
+#17 [worker internal] load build definition from Dockerfile
+#17 transferring dockerfile: 508B done
+#17 DONE 0.0s
+
+#2 [worker internal] load metadata for docker.io/library/python:3.12-slim-bookworm
+#2 ...
+
+#18 [api internal] load build definition from Dockerfile
+#18 transferring dockerfile: 508B done
+#18 DONE 0.0s
+
+#2 [api internal] load metadata for docker.io/library/python:3.12-slim-bookworm
+#2 DONE 1.9s
+
+#19 [api internal] load .dockerignore
+#19 transferring context: 131B done
+#19 DONE 0.0s
+
+#20 [worker internal] load .dockerignore
+#20 transferring context: 131B 0.0s done
+#20 DONE 0.1s
+
+#4 [worker  1/10] FROM docker.io/library/python:3.12-slim-bookworm@sha256:935c3c5b12357a7e10caa9c1e6ca5692344d97cf229832ef584be2cec9fc03df
+#4 DONE 0.0s
+
+#21 [worker internal] load build context
+#21 transferring context: 88.41kB 0.0s done
+#21 DONE 0.0s
+
+#22 [api internal] load build context
+#22 transferring context: 1.02kB 0.0s done
+#22 DONE 0.0s
+
+#23 [api  9/10] COPY harness ./harness
+#23 CACHED
+
+#6 [api  2/10] WORKDIR /app
+#6 CACHED
+
+#24 [api  7/10] RUN pip install --no-deps .
+#24 CACHED
+
+#25 [api  3/10] COPY requirements.txt ./
+#25 CACHED
+
+#26 [api  4/10] RUN pip install --no-cache-dir -r requirements.txt
+#26 CACHED
+
+#27 [api  5/10] COPY pyproject.toml ./
+#27 CACHED
+
+#28 [api  6/10] COPY src ./src
+#28 CACHED
+
+#29 [api  8/10] COPY migrations ./migrations
+#29 CACHED
+
+#30 [worker 10/10] RUN useradd --create-home --uid 10001 app
+#30 CACHED
+
+#31 [api] exporting to image
+#31 exporting layers done
+#31 writing image sha256:73c5baae88c6f69e75c2ef5059c50f626e8ba73e266e819a957639bbe649e029 done
+#31 naming to docker.io/library/training-job-queue:review-04cfb49b done
+#31 DONE 0.0s
+
+#32 [worker] exporting to image
+#32 exporting layers done
+#32 writing image sha256:bce13026ff42395835c8d1a0fca322a3e0d2d6d9ad58f87c15976ff142f6c81b done
+#32 naming to docker.io/library/training-job-queue:review-04cfb49b done
+#32 DONE 0.0s
+
+#33 [api] resolving provenance for metadata file
+#33 DONE 0.0s
+
+#34 [worker] resolving provenance for metadata file
+#34 DONE 0.0s
+ api  Built
+ migrate  Built
+ worker  Built
+ Network training-job-queue-review-04cfb49b_default  Creating
+ Network training-job-queue-review-04cfb49b_default  Created
+ Volume "training-job-queue-review-04cfb49b_postgres-data"  Creating
+ Volume "training-job-queue-review-04cfb49b_postgres-data"  Created
+ Container training-job-queue-review-04cfb49b-db-1  Creating
+ Container training-job-queue-review-04cfb49b-db-1  Created
+ Container training-job-queue-review-04cfb49b-migrate-1  Creating
+ Container training-job-queue-review-04cfb49b-migrate-1  Created
+ Container training-job-queue-review-04cfb49b-worker-4  Creating
+ Container training-job-queue-review-04cfb49b-worker-1  Creating
+ Container training-job-queue-review-04cfb49b-worker-2  Creating
+ Container training-job-queue-review-04cfb49b-worker-3  Creating
+ Container training-job-queue-review-04cfb49b-api-1  Creating
+ Container training-job-queue-review-04cfb49b-worker-1  Created
+ Container training-job-queue-review-04cfb49b-worker-4  Created
+ Container training-job-queue-review-04cfb49b-worker-2  Created
+ Container training-job-queue-review-04cfb49b-api-1  Created
+ Container training-job-queue-review-04cfb49b-worker-3  Created
+ Container training-job-queue-review-04cfb49b-db-1  Starting
+ Container training-job-queue-review-04cfb49b-db-1  Started
+ Container training-job-queue-review-04cfb49b-db-1  Waiting
+ Container training-job-queue-review-04cfb49b-db-1  Healthy
+ Container training-job-queue-review-04cfb49b-migrate-1  Starting
+ Container training-job-queue-review-04cfb49b-migrate-1  Started
+ Container training-job-queue-review-04cfb49b-migrate-1  Waiting
+ Container training-job-queue-review-04cfb49b-migrate-1  Waiting
+ Container training-job-queue-review-04cfb49b-migrate-1  Exited
+ Container training-job-queue-review-04cfb49b-api-1  Starting
+ Container training-job-queue-review-04cfb49b-migrate-1  Exited
+ Container training-job-queue-review-04cfb49b-worker-4  Starting
+ Container training-job-queue-review-04cfb49b-api-1  Started
+ Container training-job-queue-review-04cfb49b-worker-4  Started
+ Container training-job-queue-review-04cfb49b-worker-3  Starting
+ Container training-job-queue-review-04cfb49b-worker-3  Started
+ Container training-job-queue-review-04cfb49b-worker-2  Starting
+ Container training-job-queue-review-04cfb49b-worker-2  Started
+ Container training-job-queue-review-04cfb49b-worker-1  Starting
+ Container training-job-queue-review-04cfb49b-worker-1  Started
+ Container training-job-queue-review-04cfb49b-migrate-1  Waiting
+ Container training-job-queue-review-04cfb49b-api-1  Waiting
+ Container training-job-queue-review-04cfb49b-worker-4  Waiting
+ Container training-job-queue-review-04cfb49b-worker-3  Waiting
+ Container training-job-queue-review-04cfb49b-worker-2  Waiting
+ Container training-job-queue-review-04cfb49b-worker-1  Waiting
+ Container training-job-queue-review-04cfb49b-db-1  Waiting
+ Container training-job-queue-review-04cfb49b-worker-4  Healthy
+ Container training-job-queue-review-04cfb49b-worker-3  Healthy
+ Container training-job-queue-review-04cfb49b-worker-2  Healthy
+ Container training-job-queue-review-04cfb49b-worker-1  Healthy
+ Container training-job-queue-review-04cfb49b-migrate-1  Exited
+ Container training-job-queue-review-04cfb49b-db-1  Healthy
+ Container training-job-queue-review-04cfb49b-api-1  Healthy

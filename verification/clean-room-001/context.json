@@ -1,0 +1,10 @@
+{
+  "source_commit": "6f7127910cf6b7a5e05d1d9847e0f51be04be232",
+  "checkout": "/tmp/training-job-queue-review-k0bbm5x1/repo",
+  "project": "training-job-queue-review-04cfb49b",
+  "image": "training-job-queue:review-04cfb49b",
+  "port": 18080,
+  "override": "/tmp/training-job-queue-review-k0bbm5x1/review.override.yml",
+  "environment": "/tmp/training-job-queue-review-k0bbm5x1/review.env",
+  "output": "/home/paprojky/Music/soup_test/training-job-queue/verification/clean-room-001"
+}

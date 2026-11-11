@@ -1,0 +1,6 @@
+test_different_slot_can_commit_while_first_insert_is_uncommitted (test_admission.AdmissionTests.test_different_slot_can_commit_while_first_insert_is_uncommitted) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.397s
+
+OK

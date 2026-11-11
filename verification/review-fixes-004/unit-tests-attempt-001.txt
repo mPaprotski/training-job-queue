@@ -1,0 +1,28 @@
+test_actual_size_is_enforced_without_header (test_body_limit.BodyLimitTests.test_actual_size_is_enforced_without_header) ... ok
+test_chunks_are_counted_together_even_with_small_declared_length (test_body_limit.BodyLimitTests.test_chunks_are_counted_together_even_with_small_declared_length) ... ok
+test_disconnect_does_not_execute_endpoint (test_body_limit.BodyLimitTests.test_disconnect_does_not_execute_endpoint) ... ok
+test_exact_limit_is_forwarded (test_body_limit.BodyLimitTests.test_exact_limit_is_forwarded) ... ok
+test_large_declared_length_is_rejected_before_reading (test_body_limit.BodyLimitTests.test_large_declared_length_is_rejected_before_reading) ... ok
+test_non_http_scope_is_forwarded (test_body_limit.BodyLimitTests.test_non_http_scope_is_forwarded) ... ok
+test_small_chunks_are_replayed_as_one_body (test_body_limit.BodyLimitTests.test_small_chunks_are_replayed_as_one_body) ... ok
+test_custom_project_filter_selects_only_database_and_tools (test_docker_stats.DockerStatsTests.test_custom_project_filter_selects_only_database_and_tools) ... Resource samples: /tmp/tmp0uvezs_t/samples.jsonl
+ok
+test_docker_ps_failure_is_explicit (test_docker_stats.DockerStatsTests.test_docker_ps_failure_is_explicit) ... Resource samples: /tmp/tmpamma9m7n/samples.jsonl
+ok
+test_no_matching_containers_is_explicit (test_docker_stats.DockerStatsTests.test_no_matching_containers_is_explicit) ... Resource samples: /tmp/tmp3ds_8e6v/samples.jsonl
+ok
+test_capacity_rejection_remains_an_error_and_is_not_admitted (test_load.LoadAdmissionTests.test_capacity_rejection_remains_an_error_and_is_not_admitted) ... ok
+test_malformed_json_is_rejected (test_load.LoadCancellationTests.test_malformed_json_is_rejected) ... ok
+test_matching_cancelled_job_is_accepted (test_load.LoadCancellationTests.test_matching_cancelled_job_is_accepted) ... ok
+test_missing_id_is_rejected (test_load.LoadCancellationTests.test_missing_id_is_rejected) ... ok
+test_non_cancelled_state_is_rejected (test_load.LoadCancellationTests.test_non_cancelled_state_is_rejected) ... ok
+test_other_job_is_rejected_and_both_ids_are_logged (test_load.LoadCancellationTests.test_other_job_is_rejected_and_both_ids_are_logged) ... ok
+test_server_error_is_rejected (test_load.LoadCancellationTests.test_server_error_is_rejected) ... ok
+test_terminal_conflict_is_accepted_without_recording_cancellation (test_load.LoadCancellationTests.test_terminal_conflict_is_accepted_without_recording_cancellation) ... ok
+test_default_budgets (test_settings.SettingsTests.test_default_budgets) ... ok
+test_invalid_budgets_are_rejected (test_settings.SettingsTests.test_invalid_budgets_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.036s
+
+OK

@@ -1,0 +1,14 @@
+{
+  "planned_keys": 1450,
+  "acknowledged_keys": 1443,
+  "durable_known_keys": 1443,
+  "not_durable_keys": [
+    "load-20261110T074741Z-seed1-bf720b8f:measure:4530",
+    "load-20261110T074741Z-seed1-bf720b8f:measure:4534",
+    "load-20261110T074741Z-seed1-bf720b8f:measure:4540",
+    "load-20261110T074741Z-seed1-bf720b8f:measure:4544",
+    "load-20261110T074741Z-seed1-bf720b8f:measure:4554",
+    "load-20261110T074741Z-seed1-bf720b8f:measure:4690",
+    "load-20261110T074741Z-seed1-bf720b8f:measure:4734"
+  ]
+}

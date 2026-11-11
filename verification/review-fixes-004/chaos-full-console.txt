@@ -1,0 +1,46 @@
+Run artifacts: /out/chaos-20261110T212015Z-seed31-ff161d72
+{"phase": "faults", "elapsed": 2.2, "states": {"queued": 68}, "sigkills": 0}
+{"phase": "faults", "elapsed": 7.2, "states": {"cancelled": 29, "running": 6, "queued": 623, "succeeded": 296}, "sigkills": 2}
+{"phase": "faults", "elapsed": 12.2, "states": {"succeeded": 537, "cancelled": 58, "queued": 1194, "running": 6}, "sigkills": 4}
+{"phase": "faults", "elapsed": 17.2, "states": {"succeeded": 987, "cancelled": 78, "queued": 1361, "running": 8}, "sigkills": 7}
+{"phase": "faults", "elapsed": 22.3, "states": {"succeeded": 1331, "cancelled": 102, "queued": 1904, "running": 6}, "sigkills": 9}
+{"phase": "faults", "elapsed": 27.3, "states": {"succeeded": 1643, "cancelled": 127, "queued": 2264, "running": 7}, "sigkills": 12}
+{"phase": "faults", "elapsed": 32.3, "states": {"succeeded": 2022, "cancelled": 148, "queued": 2558, "running": 9}, "sigkills": 14}
+{"phase": "faults", "elapsed": 37.4, "states": {"succeeded": 2272, "cancelled": 170, "queued": 3143, "running": 7}, "sigkills": 17}
+{"phase": "faults", "elapsed": 42.4, "states": {"succeeded": 2607, "cancelled": 184, "queued": 3361, "running": 8}, "sigkills": 19}
+{"phase": "faults", "elapsed": 47.4, "states": {"succeeded": 3033, "cancelled": 206, "queued": 3616, "running": 9}, "sigkills": 21}
+{"phase": "faults", "elapsed": 52.5, "states": {"succeeded": 3281, "cancelled": 224, "queued": 4130, "running": 6}, "sigkills": 24}
+{"phase": "faults", "elapsed": 57.5, "states": {"succeeded": 3552, "cancelled": 240, "queued": 4429, "running": 7}, "sigkills": 26}
+{"phase": "faults", "elapsed": 62.5, "states": {"succeeded": 3834, "cancelled": 266, "queued": 4774, "running": 7}, "sigkills": 29}
+{"phase": "faults", "elapsed": 67.5, "states": {"succeeded": 4190, "cancelled": 292, "queued": 5050, "running": 6}, "sigkills": 31}
+{"phase": "drain", "elapsed": 71.0, "states": {"succeeded": 4361, "cancelled": 303, "queued": 5327, "running": 9}, "sigkills": 33}
+{"phase": "drain", "elapsed": 76.2, "states": {"succeeded": 4442, "cancelled": 303, "queued": 5247, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 81.3, "states": {"succeeded": 4687, "cancelled": 303, "queued": 5002, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 86.4, "states": {"succeeded": 4852, "cancelled": 303, "queued": 4837, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 91.6, "states": {"succeeded": 5088, "cancelled": 303, "queued": 4602, "running": 7}, "sigkills": 33}
+{"phase": "drain", "elapsed": 96.7, "states": {"succeeded": 5246, "cancelled": 303, "queued": 4443, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 101.7, "states": {"succeeded": 5485, "cancelled": 303, "queued": 4205, "running": 7}, "sigkills": 33}
+{"phase": "drain", "elapsed": 106.9, "states": {"succeeded": 5665, "cancelled": 303, "queued": 4024, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 112.0, "states": {"succeeded": 5841, "cancelled": 303, "queued": 3849, "running": 7}, "sigkills": 33}
+{"phase": "drain", "elapsed": 117.2, "states": {"succeeded": 6016, "cancelled": 303, "queued": 3673, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 122.3, "states": {"succeeded": 6114, "cancelled": 303, "queued": 3575, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 127.4, "states": {"succeeded": 6381, "cancelled": 303, "queued": 3308, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 132.6, "states": {"succeeded": 6576, "cancelled": 303, "queued": 3113, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 137.9, "states": {"succeeded": 6756, "cancelled": 303, "queued": 2933, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 143.0, "states": {"succeeded": 6958, "cancelled": 303, "queued": 2732, "running": 7}, "sigkills": 33}
+{"phase": "drain", "elapsed": 148.1, "states": {"succeeded": 7086, "cancelled": 303, "queued": 2603, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 153.2, "states": {"succeeded": 7328, "cancelled": 303, "queued": 2361, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 158.4, "states": {"succeeded": 7453, "cancelled": 303, "queued": 2237, "running": 7}, "sigkills": 33}
+{"phase": "drain", "elapsed": 163.6, "states": {"succeeded": 7567, "cancelled": 303, "queued": 2122, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 168.8, "states": {"succeeded": 7712, "cancelled": 303, "queued": 1977, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 174.0, "states": {"succeeded": 7886, "cancelled": 303, "queued": 1803, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 179.0, "states": {"succeeded": 8069, "cancelled": 303, "queued": 1620, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 184.1, "states": {"succeeded": 8313, "cancelled": 303, "queued": 1376, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 189.2, "states": {"succeeded": 8461, "cancelled": 303, "queued": 1228, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 194.5, "states": {"succeeded": 8625, "cancelled": 303, "queued": 1064, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 199.6, "states": {"succeeded": 8837, "cancelled": 303, "queued": 852, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 204.7, "states": {"succeeded": 8991, "cancelled": 303, "queued": 698, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 209.8, "states": {"succeeded": 9300, "cancelled": 303, "queued": 389, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 214.9, "states": {"succeeded": 9506, "cancelled": 303, "queued": 183, "running": 8}, "sigkills": 33}
+{"phase": "drain", "elapsed": 220.1, "states": {"succeeded": 9683, "cancelled": 303, "queued": 6, "running": 8}, "sigkills": 33}
+{"run_id": "chaos-20261110T212015Z-seed31-ff161d72", "passed": true, "expected_jobs": 10000, "actual_jobs": 10000, "states": {"cancelled": 303, "succeeded": 9697}, "attempts": {"succeeded": 9697, "failed": 190, "cancelled": 201, "expired": 9}, "effects": 9697, "violations": [], "counters": {"unique_posts": 10000, "repeated_posts": 1216, "cancel_accepted": 308, "cancel_requests": 440, "cancel_running_observed": 238, "cancel_too_late": 132, "sigkills": 33, "sigkills_with_running_job": 30}, "errors": [], "database": "chaos_a2c2500645544b03ad7119abefa16aff", "database_retained": false, "elapsed_seconds": 226.912}

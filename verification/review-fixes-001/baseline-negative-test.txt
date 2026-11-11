@@ -1,0 +1,14 @@
+test_other_job_is_rejected_and_both_ids_are_logged (test_load.LoadCancellationTests.test_other_job_is_rejected_and_both_ids_are_logged) ... FAIL
+
+======================================================================
+FAIL: test_other_job_is_rejected_and_both_ids_are_logged (test_load.LoadCancellationTests.test_other_job_is_rejected_and_both_ids_are_logged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/unit/test_load.py", line 58, in test_other_job_is_rejected_and_both_ids_are_logged
+    self.assertFalse(run.records[0]["valid"])
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (failures=1)

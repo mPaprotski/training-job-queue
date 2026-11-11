@@ -1,0 +1,57 @@
+{
+  "runs": [
+    {
+      "repetition": 0,
+      "pool_enabled": false,
+      "transactions": 500,
+      "elapsed_seconds": 6.357681796005636,
+      "ms_per_transaction": 12.715363592011272,
+      "unique_backends": 500
+    },
+    {
+      "repetition": 0,
+      "pool_enabled": true,
+      "transactions": 500,
+      "elapsed_seconds": 0.16860044799977913,
+      "ms_per_transaction": 0.33720089599955827,
+      "unique_backends": 1
+    },
+    {
+      "repetition": 1,
+      "pool_enabled": true,
+      "transactions": 500,
+      "elapsed_seconds": 0.20299054599308874,
+      "ms_per_transaction": 0.4059810919861775,
+      "unique_backends": 1
+    },
+    {
+      "repetition": 1,
+      "pool_enabled": false,
+      "transactions": 500,
+      "elapsed_seconds": 6.183957993998774,
+      "ms_per_transaction": 12.367915987997549,
+      "unique_backends": 500
+    },
+    {
+      "repetition": 2,
+      "pool_enabled": false,
+      "transactions": 500,
+      "elapsed_seconds": 6.022716131003108,
+      "ms_per_transaction": 12.045432262006216,
+      "unique_backends": 500
+    },
+    {
+      "repetition": 2,
+      "pool_enabled": true,
+      "transactions": 500,
+      "elapsed_seconds": 0.14271075800206745,
+      "ms_per_transaction": 0.2854215160041349,
+      "unique_backends": 1
+    }
+  ],
+  "median_ms_per_transaction": {
+    "False": 12.367915987997549,
+    "True": 0.33720089599955827
+  },
+  "scope": "SELECT transaction overhead, not HTTP or job throughput"
+}

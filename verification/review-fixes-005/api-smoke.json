@@ -1,0 +1,913 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "method": "GET",
+      "path": "/jobs",
+      "status": 200,
+      "body": {
+        "items": [],
+        "next_cursor": null
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/jobs",
+      "status": 201,
+      "body": {
+        "id": "9887f179-9187-4b6e-90c6-3ea430d40c25",
+        "idempotency_key": "clean-first",
+        "payload": {},
+        "state": "queued",
+        "attempt_no": 0,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-10T21:42:37.258758Z",
+        "started_at": null,
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/jobs",
+      "status": 200,
+      "body": {
+        "id": "9887f179-9187-4b6e-90c6-3ea430d40c25",
+        "idempotency_key": "clean-first",
+        "payload": {},
+        "state": "queued",
+        "attempt_no": 0,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-10T21:42:37.258758Z",
+        "started_at": null,
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/jobs",
+      "status": 409,
+      "body": {
+        "detail": "Idempotency key already belongs to a different payload"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/jobs",
+      "status": 201,
+      "body": {
+        "id": "94a00917-a1d7-46dc-9bb4-58e05742446f",
+        "idempotency_key": "clean-cancel",
+        "payload": {
+          "simulation": {
+            "duration_seconds": 5
+          }
+        },
+        "state": "queued",
+        "attempt_no": 0,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-10T21:42:37.280764Z",
+        "started_at": null,
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/94a00917-a1d7-46dc-9bb4-58e05742446f",
+      "status": 200,
+      "body": {
+        "id": "94a00917-a1d7-46dc-9bb4-58e05742446f",
+        "idempotency_key": "clean-cancel",
+        "payload": {
+          "simulation": {
+            "duration_seconds": 5
+          }
+        },
+        "state": "queued",
+        "attempt_no": 0,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-10T21:42:37.280764Z",
+        "started_at": null,
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/94a00917-a1d7-46dc-9bb4-58e05742446f",
+      "status": 200,
+      "body": {
+        "id": "94a00917-a1d7-46dc-9bb4-58e05742446f",
+        "idempotency_key": "clean-cancel",
+        "payload": {
+          "simulation": {
+            "duration_seconds": 5
+          }
+        },
+        "state": "queued",
+        "attempt_no": 0,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-10T21:42:37.280764Z",
+        "started_at": null,
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/94a00917-a1d7-46dc-9bb4-58e05742446f",
+      "status": 200,
+      "body": {
+        "id": "94a00917-a1d7-46dc-9bb4-58e05742446f",
+        "idempotency_key": "clean-cancel",
+        "payload": {
+          "simulation": {
+            "duration_seconds": 5
+          }
+        },
+        "state": "queued",
+        "attempt_no": 0,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-10T21:42:37.280764Z",
+        "started_at": null,
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/94a00917-a1d7-46dc-9bb4-58e05742446f",
+      "status": 200,
+      "body": {
+        "id": "94a00917-a1d7-46dc-9bb4-58e05742446f",
+        "idempotency_key": "clean-cancel",
+        "payload": {
+          "simulation": {
+            "duration_seconds": 5
+          }
+        },
+        "state": "queued",
+        "attempt_no": 0,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-10T21:42:37.280764Z",
+        "started_at": null,
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/94a00917-a1d7-46dc-9bb4-58e05742446f",
+      "status": 200,
+      "body": {
+        "id": "94a00917-a1d7-46dc-9bb4-58e05742446f",
+        "idempotency_key": "clean-cancel",
+        "payload": {
+          "simulation": {
+            "duration_seconds": 5
+          }
+        },
+        "state": "queued",
+        "attempt_no": 0,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-10T21:42:37.280764Z",
+        "started_at": null,
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/94a00917-a1d7-46dc-9bb4-58e05742446f",
+      "status": 200,
+      "body": {
+        "id": "94a00917-a1d7-46dc-9bb4-58e05742446f",
+        "idempotency_key": "clean-cancel",
+        "payload": {
+          "simulation": {
+            "duration_seconds": 5
+          }
+        },
+        "state": "queued",
+        "attempt_no": 0,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-10T21:42:37.280764Z",
+        "started_at": null,
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/94a00917-a1d7-46dc-9bb4-58e05742446f",
+      "status": 200,
+      "body": {
+        "id": "94a00917-a1d7-46dc-9bb4-58e05742446f",
+        "idempotency_key": "clean-cancel",
+        "payload": {
+          "simulation": {
+            "duration_seconds": 5
+          }
+        },
+        "state": "queued",
+        "attempt_no": 0,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-10T21:42:37.280764Z",
+        "started_at": null,
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/94a00917-a1d7-46dc-9bb4-58e05742446f",
+      "status": 200,
+      "body": {
+        "id": "94a00917-a1d7-46dc-9bb4-58e05742446f",
+        "idempotency_key": "clean-cancel",
+        "payload": {
+          "simulation": {
+            "duration_seconds": 5
+          }
+        },
+        "state": "running",
+        "attempt_no": 1,
+        "max_attempts": 5,
+        "worker_id": "53479cb2634a:5b20ff29",
+        "lease_expires_at": "2026-11-10T21:42:52.649058Z",
+        "created_at": "2026-11-10T21:42:37.280764Z",
+        "started_at": "2026-11-10T21:42:37.649058Z",
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/jobs/94a00917-a1d7-46dc-9bb4-58e05742446f/cancel",
+      "status": 200,
+      "body": {
+        "id": "94a00917-a1d7-46dc-9bb4-58e05742446f",
+        "idempotency_key": "clean-cancel",
+        "payload": {
+          "simulation": {
+            "duration_seconds": 5
+          }
+        },
+        "state": "cancelled",
+        "attempt_no": 1,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-10T21:42:37.280764Z",
+        "started_at": "2026-11-10T21:42:37.649058Z",
+        "finished_at": "2026-11-10T21:42:37.707010Z",
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/jobs/94a00917-a1d7-46dc-9bb4-58e05742446f/cancel",
+      "status": 200,
+      "body": {
+        "id": "94a00917-a1d7-46dc-9bb4-58e05742446f",
+        "idempotency_key": "clean-cancel",
+        "payload": {
+          "simulation": {
+            "duration_seconds": 5
+          }
+        },
+        "state": "cancelled",
+        "attempt_no": 1,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-10T21:42:37.280764Z",
+        "started_at": "2026-11-10T21:42:37.649058Z",
+        "finished_at": "2026-11-10T21:42:37.707010Z",
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/9887f179-9187-4b6e-90c6-3ea430d40c25",
+      "status": 200,
+      "body": {
+        "id": "9887f179-9187-4b6e-90c6-3ea430d40c25",
+        "idempotency_key": "clean-first",
+        "payload": {},
+        "state": "succeeded",
+        "attempt_no": 1,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-10T21:42:37.258758Z",
+        "started_at": "2026-11-10T21:42:37.521519Z",
+        "finished_at": "2026-11-10T21:42:37.640450Z",
+        "result": {
+          "job_id": "9887f179-9187-4b6e-90c6-3ea430d40c25",
+          "worker_id": "53479cb2634a:5b20ff29",
+          "attempt_no": 1
+        },
+        "error": null
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobs?limit=1",
+      "status": 200,
+      "body": {
+        "items": [
+          {
+            "id": "9887f179-9187-4b6e-90c6-3ea430d40c25",
+            "idempotency_key": "clean-first",
+            "payload": {},
+            "state": "succeeded",
+            "attempt_no": 1,
+            "max_attempts": 5,
+            "worker_id": null,
+            "lease_expires_at": null,
+            "created_at": "2026-11-10T21:42:37.258758Z",
+            "started_at": "2026-11-10T21:42:37.521519Z",
+            "finished_at": "2026-11-10T21:42:37.640450Z",
+            "result": {
+              "job_id": "9887f179-9187-4b6e-90c6-3ea430d40c25",
+              "worker_id": "53479cb2634a:5b20ff29",
+              "attempt_no": 1
+            },
+            "error": null
+          }
+        ],
+        "next_cursor": "WyIyMDI2LTExLTEwVDIxOjQyOjM3LjI1ODc1OCswMDowMCIsIjk4ODdmMTc5LTkxODctNGI2ZS05MGM2LTNlYTQzMGQ0MGMyNSJd"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobs?limit=1&cursor=WyIyMDI2LTExLTEwVDIxOjQyOjM3LjI1ODc1OCswMDowMCIsIjk4ODdmMTc5LTkxODctNGI2ZS05MGM2LTNlYTQzMGQ0MGMyNSJd",
+      "status": 200,
+      "body": {
+        "items": [
+          {
+            "id": "94a00917-a1d7-46dc-9bb4-58e05742446f",
+            "idempotency_key": "clean-cancel",
+            "payload": {
+              "simulation": {
+                "duration_seconds": 5
+              }
+            },
+            "state": "cancelled",
+            "attempt_no": 1,
+            "max_attempts": 5,
+            "worker_id": null,
+            "lease_expires_at": null,
+            "created_at": "2026-11-10T21:42:37.280764Z",
+            "started_at": "2026-11-10T21:42:37.649058Z",
+            "finished_at": "2026-11-10T21:42:37.707010Z",
+            "result": null,
+            "error": null
+          }
+        ],
+        "next_cursor": null
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/openapi.json",
+      "status": 200,
+      "body": {
+        "openapi": "3.1.0",
+        "info": {
+          "title": "Training Job Queue",
+          "version": "0.1.0"
+        },
+        "paths": {
+          "/jobs": {
+            "post": {
+              "summary": "Create Job",
+              "operationId": "create_job_jobs_post",
+              "parameters": [
+                {
+                  "name": "Idempotency-Key",
+                  "in": "header",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 255,
+                    "title": "Idempotency-Key"
+                  }
+                }
+              ],
+              "requestBody": {
+                "required": true,
+                "content": {
+                  "application/json": {
+                    "schema": {
+                      "$ref": "#/components/schemas/CreateJob"
+                    }
+                  }
+                }
+              },
+              "responses": {
+                "201": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Job"
+                      }
+                    }
+                  }
+                },
+                "413": {
+                  "description": "Request body exceeds 65536 bytes"
+                },
+                "200": {
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Job"
+                      }
+                    }
+                  },
+                  "description": "OK"
+                },
+                "409": {
+                  "description": "Key conflict"
+                },
+                "503": {
+                  "description": "Queue full or database temporarily unavailable"
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "get": {
+              "summary": "List Jobs",
+              "operationId": "list_jobs_jobs_get",
+              "parameters": [
+                {
+                  "name": "limit",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "type": "integer",
+                    "maximum": 100,
+                    "minimum": 1,
+                    "default": 50,
+                    "title": "Limit"
+                  }
+                },
+                {
+                  "name": "cursor",
+                  "in": "query",
+                  "required": false,
+                  "schema": {
+                    "anyOf": [
+                      {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 512
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ],
+                    "title": "Cursor"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/JobPage"
+                      }
+                    }
+                  }
+                },
+                "413": {
+                  "description": "Request body exceeds 65536 bytes"
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/jobs/{job_id}": {
+            "get": {
+              "summary": "Get Job",
+              "operationId": "get_job_jobs__job_id__get",
+              "parameters": [
+                {
+                  "name": "job_id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid",
+                    "title": "Job Id"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Job"
+                      }
+                    }
+                  }
+                },
+                "413": {
+                  "description": "Request body exceeds 65536 bytes"
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/jobs/{job_id}/cancel": {
+            "post": {
+              "summary": "Cancel Job",
+              "operationId": "cancel_job_jobs__job_id__cancel_post",
+              "parameters": [
+                {
+                  "name": "job_id",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string",
+                    "format": "uuid",
+                    "title": "Job Id"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/Job"
+                      }
+                    }
+                  }
+                },
+                "413": {
+                  "description": "Request body exceeds 65536 bytes"
+                },
+                "422": {
+                  "description": "Validation Error",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "$ref": "#/components/schemas/HTTPValidationError"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/health/live": {
+            "get": {
+              "summary": "Live",
+              "operationId": "live_health_live_get",
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "additionalProperties": {
+                          "type": "string"
+                        },
+                        "type": "object",
+                        "title": "Response Live Health Live Get"
+                      }
+                    }
+                  }
+                },
+                "413": {
+                  "description": "Request body exceeds 65536 bytes"
+                }
+              }
+            }
+          },
+          "/health/ready": {
+            "get": {
+              "summary": "Ready",
+              "operationId": "ready_health_ready_get",
+              "responses": {
+                "200": {
+                  "description": "Successful Response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "additionalProperties": {
+                          "type": "string"
+                        },
+                        "type": "object",
+                        "title": "Response Ready Health Ready Get"
+                      }
+                    }
+                  }
+                },
+                "413": {
+                  "description": "Request body exceeds 65536 bytes"
+                }
+              }
+            }
+          }
+        },
+        "components": {
+          "schemas": {
+            "CreateJob": {
+              "properties": {
+                "payload": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/JsonValue"
+                  },
+                  "type": "object",
+                  "title": "Payload"
+                }
+              },
+              "additionalProperties": false,
+              "type": "object",
+              "required": [
+                "payload"
+              ],
+              "title": "CreateJob"
+            },
+            "HTTPValidationError": {
+              "properties": {
+                "detail": {
+                  "items": {
+                    "$ref": "#/components/schemas/ValidationError"
+                  },
+                  "type": "array",
+                  "title": "Detail"
+                }
+              },
+              "type": "object",
+              "title": "HTTPValidationError"
+            },
+            "Job": {
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "format": "uuid",
+                  "title": "Id"
+                },
+                "idempotency_key": {
+                  "type": "string",
+                  "title": "Idempotency Key"
+                },
+                "payload": {
+                  "additionalProperties": {
+                    "$ref": "#/components/schemas/JsonValue"
+                  },
+                  "type": "object",
+                  "title": "Payload"
+                },
+                "state": {
+                  "type": "string",
+                  "enum": [
+                    "queued",
+                    "running",
+                    "succeeded",
+                    "failed",
+                    "cancelled"
+                  ],
+                  "title": "State"
+                },
+                "attempt_no": {
+                  "type": "integer",
+                  "title": "Attempt No"
+                },
+                "max_attempts": {
+                  "type": "integer",
+                  "title": "Max Attempts"
+                },
+                "worker_id": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Worker Id"
+                },
+                "lease_expires_at": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Lease Expires At"
+                },
+                "created_at": {
+                  "type": "string",
+                  "format": "date-time",
+                  "title": "Created At"
+                },
+                "started_at": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Started At"
+                },
+                "finished_at": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "format": "date-time"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Finished At"
+                },
+                "result": {
+                  "$ref": "#/components/schemas/JsonValue"
+                },
+                "error": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Error"
+                }
+              },
+              "type": "object",
+              "required": [
+                "id",
+                "idempotency_key",
+                "payload",
+                "state",
+                "attempt_no",
+                "max_attempts",
+                "worker_id",
+                "lease_expires_at",
+                "created_at",
+                "started_at",
+                "finished_at",
+                "error"
+              ],
+              "title": "Job"
+            },
+            "JobPage": {
+              "properties": {
+                "items": {
+                  "items": {
+                    "$ref": "#/components/schemas/Job"
+                  },
+                  "type": "array",
+                  "title": "Items"
+                },
+                "next_cursor": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ],
+                  "title": "Next Cursor"
+                }
+              },
+              "type": "object",
+              "required": [
+                "items",
+                "next_cursor"
+              ],
+              "title": "JobPage"
+            },
+            "JsonValue": {},
+            "ValidationError": {
+              "properties": {
+                "loc": {
+                  "items": {
+                    "anyOf": [
+                      {
+                        "type": "string"
+                      },
+                      {
+                        "type": "integer"
+                      }
+                    ]
+                  },
+                  "type": "array",
+                  "title": "Location"
+                },
+                "msg": {
+                  "type": "string",
+                  "title": "Message"
+                },
+                "type": {
+                  "type": "string",
+                  "title": "Error Type"
+                },
+                "input": {
+                  "title": "Input"
+                },
+                "ctx": {
+                  "type": "object",
+                  "title": "Context"
+                }
+              },
+              "type": "object",
+              "required": [
+                "loc",
+                "msg",
+                "type"
+              ],
+              "title": "ValidationError"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

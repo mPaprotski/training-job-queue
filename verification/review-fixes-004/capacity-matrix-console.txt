@@ -1,0 +1,13 @@
+{"starting": "control-mixed", "pool": "off", "workers": 4, "profile": "mixed"}
+{"finished": "control-mixed", "returncode": 1, "run_id": "load-20261110T212432Z-seed41-f43fb79c"}
+{"starting": "control-create", "pool": "off", "workers": 4, "profile": "create"}
+{"finished": "control-create", "returncode": 1, "run_id": "load-20261110T212559Z-seed41-426a663f"}
+{"starting": "pooled-mixed", "pool": "on", "workers": 4, "profile": "mixed"}
+{"finished": "pooled-mixed", "returncode": 0, "run_id": "load-20261110T212815Z-seed41-19f98092"}
+{"starting": "pooled-create", "pool": "on", "workers": 4, "profile": "create"}
+{"finished": "pooled-create", "returncode": 1, "run_id": "load-20261110T212932Z-seed41-0d1bf97a"}
+{"starting": "scaled-mixed", "pool": "on", "workers": 16, "profile": "mixed"}
+{"finished": "scaled-mixed", "returncode": 0, "run_id": "load-20261110T213119Z-seed41-98fe2d9c"}
+{"starting": "scaled-create", "pool": "on", "workers": 16, "profile": "create"}
+{"finished": "scaled-create", "returncode": 1, "run_id": "load-20261110T213239Z-seed41-888b0d7b"}
+Capacity matrix complete

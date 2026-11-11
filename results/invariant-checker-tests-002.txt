@@ -1,0 +1,13 @@
+test_bad_success_result_is_detected (test_invariants.InvariantCheckerTests.test_bad_success_result_is_detected) ... ok
+test_boolean_payload_is_not_equal_to_number (test_invariants.InvariantCheckerTests.test_boolean_payload_is_not_equal_to_number) ... ok
+test_duplicate_effect_is_detected_independently_of_constraint (test_invariants.InvariantCheckerTests.test_duplicate_effect_is_detected_independently_of_constraint) ... ok
+test_duplicate_logical_job_is_detected_without_unique_constraint (test_invariants.InvariantCheckerTests.test_duplicate_logical_job_is_detected_without_unique_constraint) ... ok
+test_healthy_fixture_passes (test_invariants.InvariantCheckerTests.test_healthy_fixture_passes) ... ok
+test_missing_job_is_detected (test_invariants.InvariantCheckerTests.test_missing_job_is_detected) ... ok
+test_stuck_running_is_detected (test_invariants.InvariantCheckerTests.test_stuck_running_is_detected) ... ok
+test_terminal_change_and_lost_acknowledged_cancel_are_detected (test_invariants.InvariantCheckerTests.test_terminal_change_and_lost_acknowledged_cancel_are_detected) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 3.054s
+
+OK

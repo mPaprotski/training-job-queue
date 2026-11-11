@@ -1,0 +1,131 @@
+{
+  "run_id": "load-20261110T073539Z-seed1-cd64e0a2",
+  "passed": false,
+  "expected_jobs": 150,
+  "actual_jobs": 150,
+  "states": {
+    "running": 2,
+    "queued": 90,
+    "succeeded": 58
+  },
+  "attempts": {
+    "running": 2,
+    "succeeded": 58
+  },
+  "effects": 58,
+  "violations": [
+    {
+      "invariant": "all_jobs_terminal",
+      "count": 92,
+      "samples": [
+        {
+          "id": "a181100d-70d2-47a7-901a-a48a88c85678",
+          "state": "queued"
+        },
+        {
+          "id": "4d41051e-0b68-4cb6-9d15-8f2171547cdc",
+          "state": "queued"
+        },
+        {
+          "id": "5acfab73-12ba-47e2-bad0-74f5f696b927",
+          "state": "queued"
+        },
+        {
+          "id": "c3e24c9b-c842-43cd-bb42-1553617b651f",
+          "state": "queued"
+        },
+        {
+          "id": "e13c6a00-0113-4a2f-a159-f09e2b83495e",
+          "state": "queued"
+        }
+      ]
+    },
+    {
+      "invariant": "no_open_attempts_after_drain",
+      "count": 2,
+      "samples": [
+        {
+          "job_id": "2a46e4b6-f5d3-460a-a8dc-2f4da0b63b10",
+          "attempt_no": 1
+        },
+        {
+          "job_id": "6c2ce27c-5ce0-43fd-9db4-fa40f84ffec9",
+          "attempt_no": 1
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "offered_requests": 100,
+    "issued_requests": 100,
+    "issued_within_window_rps": 50.0,
+    "errors_including_drops": 0,
+    "error_fraction": 0.0,
+    "dropped_requests": 0,
+    "scheduled_latency_seconds": {
+      "p50": 0.31092209800044657,
+      "p95": 0.4392506250005681,
+      "p99": 0.548368918000051
+    },
+    "response_seconds": {
+      "p50": 0.3096848470013356,
+      "p95": 0.4371697319984378,
+      "p99": 0.5465879629991832
+    },
+    "dispatch_lag_seconds": {
+      "p50": 0.0018499210018489975,
+      "p95": 0.008841096998366993,
+      "p99": 0.013805196998873726
+    },
+    "job_completion_seconds": {
+      "p50": 1.929392,
+      "p95": 2.512529,
+      "p99": 2.512529
+    },
+    "job_latency_samples": 7,
+    "measurement_job_states": {
+      "queued": 92,
+      "running": 1,
+      "succeeded": 7
+    },
+    "queue_growth": 0,
+    "peak_queue": 39,
+    "after_requests": {
+      "queued": 95,
+      "running": 1,
+      "succeeded": 54,
+      "cancelled": 0,
+      "oldest_queued_seconds": 2.192231,
+      "db_connections": 4,
+      "elapsed": 2.589891315001296
+    },
+    "drain_seconds": 0.24873771999773453,
+    "drain_timed_out": true,
+    "peak_application_rss_bytes": 259014656,
+    "peak_db_connections": 7,
+    "statuses": {
+      "201": 100
+    }
+  },
+  "invariants_passed": false,
+  "criteria": {
+    "exact_offered_count": true,
+    "target_rps": true,
+    "no_generator_drops": true,
+    "error_fraction_le_0_001": true,
+    "scheduled_p95_le_0_5s": true,
+    "scheduled_p99_le_1s": true,
+    "dispatch_p95_le_0_05s": true,
+    "queue_growth_le_20": true,
+    "oldest_queued_le_2s": false,
+    "job_completion_p95_le_5s": true,
+    "drain_le_60s": true,
+    "drain_completed": false
+  },
+  "benchmark_passed": false,
+  "counters": {},
+  "errors": [],
+  "database": "chaos_c8bdbaf49c0f46148051ccb11efd72d6",
+  "database_retained": false,
+  "elapsed_seconds": 26.2
+}

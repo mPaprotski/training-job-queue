@@ -1,0 +1,48 @@
+Run artifacts: /out/chaos-20261111T081108Z-seed51-4174187c
+{"phase": "faults", "elapsed": 2.6, "states": {"queued": 53}, "sigkills": 0}
+{"phase": "faults", "elapsed": 7.6, "states": {"cancelled": 28, "running": 8, "queued": 536, "succeeded": 188}, "sigkills": 2}
+{"phase": "faults", "elapsed": 12.6, "states": {"cancelled": 59, "running": 7, "queued": 1164, "succeeded": 513}, "sigkills": 4}
+{"phase": "faults", "elapsed": 17.7, "states": {"succeeded": 861, "cancelled": 93, "queued": 1731, "running": 6}, "sigkills": 7}
+{"phase": "faults", "elapsed": 22.7, "states": {"succeeded": 1208, "cancelled": 125, "queued": 2215, "running": 8}, "sigkills": 9}
+{"phase": "faults", "elapsed": 27.7, "states": {"succeeded": 1509, "cancelled": 150, "queued": 2612, "running": 7}, "sigkills": 12}
+{"phase": "faults", "elapsed": 32.7, "states": {"succeeded": 1734, "cancelled": 163, "queued": 3111, "running": 7}, "sigkills": 14}
+{"phase": "faults", "elapsed": 37.7, "states": {"succeeded": 2079, "cancelled": 189, "queued": 3469, "running": 5}, "sigkills": 16}
+{"phase": "faults", "elapsed": 42.8, "states": {"succeeded": 2510, "cancelled": 215, "queued": 3701, "running": 8}, "sigkills": 19}
+{"phase": "faults", "elapsed": 47.8, "states": {"succeeded": 2786, "cancelled": 236, "queued": 4068, "running": 7}, "sigkills": 21}
+{"phase": "faults", "elapsed": 52.9, "states": {"succeeded": 2963, "cancelled": 261, "queued": 4590, "running": 7}, "sigkills": 24}
+{"phase": "faults", "elapsed": 57.9, "states": {"succeeded": 3206, "cancelled": 284, "queued": 4975, "running": 7}, "sigkills": 26}
+{"phase": "faults", "elapsed": 62.9, "states": {"succeeded": 3535, "cancelled": 303, "queued": 5228, "running": 7}, "sigkills": 28}
+{"phase": "faults", "elapsed": 68.0, "states": {"succeeded": 3864, "cancelled": 324, "queued": 5497, "running": 8}, "sigkills": 31}
+{"phase": "drain", "elapsed": 70.5, "states": {"succeeded": 3987, "cancelled": 334, "queued": 5673, "running": 6}, "sigkills": 32}
+{"phase": "drain", "elapsed": 75.6, "states": {"succeeded": 4177, "cancelled": 334, "queued": 5481, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 80.6, "states": {"succeeded": 4468, "cancelled": 334, "queued": 5190, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 85.7, "states": {"succeeded": 4768, "cancelled": 334, "queued": 4890, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 91.0, "states": {"succeeded": 4952, "cancelled": 334, "queued": 4706, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 96.2, "states": {"succeeded": 5178, "cancelled": 334, "queued": 4480, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 101.3, "states": {"succeeded": 5336, "cancelled": 334, "queued": 4322, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 106.5, "states": {"succeeded": 5481, "cancelled": 334, "queued": 4177, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 111.6, "states": {"succeeded": 5591, "cancelled": 334, "queued": 4067, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 116.8, "states": {"succeeded": 5714, "cancelled": 334, "queued": 3944, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 121.9, "states": {"succeeded": 5895, "cancelled": 334, "queued": 3763, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 127.0, "states": {"succeeded": 6068, "cancelled": 334, "queued": 3590, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 132.2, "states": {"succeeded": 6313, "cancelled": 334, "queued": 3346, "running": 7}, "sigkills": 32}
+{"phase": "drain", "elapsed": 137.3, "states": {"succeeded": 6481, "cancelled": 334, "queued": 3177, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 142.6, "states": {"succeeded": 6588, "cancelled": 334, "queued": 3070, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 147.8, "states": {"succeeded": 6810, "cancelled": 334, "queued": 2848, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 153.1, "states": {"succeeded": 6957, "cancelled": 334, "queued": 2701, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 158.2, "states": {"succeeded": 7178, "cancelled": 334, "queued": 2481, "running": 7}, "sigkills": 32}
+{"phase": "drain", "elapsed": 163.3, "states": {"succeeded": 7343, "cancelled": 334, "queued": 2315, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 168.5, "states": {"succeeded": 7540, "cancelled": 334, "queued": 2118, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 173.7, "states": {"succeeded": 7736, "cancelled": 334, "queued": 1923, "running": 7}, "sigkills": 32}
+{"phase": "drain", "elapsed": 179.0, "states": {"succeeded": 7879, "cancelled": 334, "queued": 1781, "running": 6}, "sigkills": 32}
+{"phase": "drain", "elapsed": 184.1, "states": {"succeeded": 8070, "cancelled": 334, "queued": 1588, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 189.3, "states": {"succeeded": 8199, "cancelled": 334, "queued": 1460, "running": 7}, "sigkills": 32}
+{"phase": "drain", "elapsed": 194.4, "states": {"succeeded": 8392, "cancelled": 334, "queued": 1266, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 199.5, "states": {"succeeded": 8524, "cancelled": 334, "queued": 1135, "running": 7}, "sigkills": 32}
+{"phase": "drain", "elapsed": 204.6, "states": {"succeeded": 8689, "cancelled": 334, "queued": 970, "running": 7}, "sigkills": 32}
+{"phase": "drain", "elapsed": 209.7, "states": {"succeeded": 8926, "cancelled": 334, "queued": 732, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 214.9, "states": {"succeeded": 9085, "cancelled": 334, "queued": 573, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 220.1, "states": {"succeeded": 9202, "cancelled": 334, "queued": 456, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 225.2, "states": {"succeeded": 9427, "cancelled": 334, "queued": 231, "running": 8}, "sigkills": 32}
+{"phase": "drain", "elapsed": 230.2, "states": {"succeeded": 9660, "cancelled": 334, "running": 6}, "sigkills": 32}
+{"run_id": "chaos-20261111T081108Z-seed51-4174187c", "passed": true, "expected_jobs": 10000, "actual_jobs": 10000, "states": {"cancelled": 334, "succeeded": 9666}, "attempts": {"succeeded": 9666, "failed": 198, "cancelled": 202, "expired": 4}, "effects": 9666, "violations": [], "counters": {"unique_posts": 10000, "repeated_posts": 1183, "cancel_accepted": 342, "cancel_requests": 436, "cancel_running_observed": 227, "sigkills": 32, "sigkills_with_running_job": 28, "cancel_too_late": 94}, "errors": [], "database": "chaos_9a241a5be5b64329bdc67a16e4d82a43", "database_retained": false, "elapsed_seconds": 236.346}

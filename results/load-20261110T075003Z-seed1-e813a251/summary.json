@@ -1,0 +1,138 @@
+{
+  "run_id": "load-20261110T075003Z-seed1-e813a251",
+  "passed": false,
+  "expected_jobs": 7050,
+  "actual_jobs": 7050,
+  "states": {
+    "succeeded": 4699,
+    "queued": 2351
+  },
+  "attempts": {
+    "succeeded": 4699
+  },
+  "effects": 4699,
+  "violations": [
+    {
+      "invariant": "all_jobs_terminal",
+      "count": 2355,
+      "samples": [
+        {
+          "id": "2f0dd5b8-b7e3-43af-a64c-1f791389ce5d",
+          "state": "queued"
+        },
+        {
+          "id": "3fd8270c-f61e-49da-bdd6-7a0bdd862a42",
+          "state": "queued"
+        },
+        {
+          "id": "e1b6e4e4-ebf9-4387-8282-a38be465ae67",
+          "state": "queued"
+        },
+        {
+          "id": "5a0fa8c5-73e9-467f-9981-25a16fe05ca4",
+          "state": "queued"
+        },
+        {
+          "id": "eafb6ee7-6ab6-4171-a959-ef7baf9a0f41",
+          "state": "queued"
+        }
+      ]
+    },
+    {
+      "invariant": "no_open_attempts_after_drain",
+      "count": 4,
+      "samples": [
+        {
+          "job_id": "20c31bf4-b5af-4f96-8bd1-5eb392581a7f",
+          "attempt_no": 1
+        },
+        {
+          "job_id": "2abf792e-b5e7-4ce3-9509-552a704ee810",
+          "attempt_no": 1
+        },
+        {
+          "job_id": "c5e0a645-ef47-496e-961d-7f5072d3697c",
+          "attempt_no": 1
+        },
+        {
+          "job_id": "d6145f77-77eb-42bf-9a7f-82e1c6f8442d",
+          "attempt_no": 1
+        }
+      ]
+    }
+  ],
+  "metrics": {
+    "offered_requests": 6000,
+    "issued_requests": 6000,
+    "issued_within_window_rps": 99.98333333333333,
+    "errors_including_drops": 0,
+    "error_fraction": 0.0,
+    "dropped_requests": 0,
+    "scheduled_latency_seconds": {
+      "p50": 0.05003864099853672,
+      "p95": 0.2399774929981504,
+      "p99": 0.5558487489979598
+    },
+    "response_seconds": {
+      "p50": 0.049416326997743454,
+      "p95": 0.2387960710002517,
+      "p99": 0.5541021039971383
+    },
+    "dispatch_lag_seconds": {
+      "p50": 0.000392359997931635,
+      "p95": 0.003437714000028791,
+      "p99": 0.006383623996953247
+    },
+    "job_completion_seconds": {
+      "p50": 185.70662,
+      "p95": 310.596522,
+      "p99": 321.094069
+    },
+    "job_latency_samples": 3633,
+    "measurement_job_states": {
+      "queued": 2363,
+      "running": 2,
+      "succeeded": 3635
+    },
+    "queue_growth": 4864,
+    "peak_queue": 5723,
+    "after_requests": {
+      "queued": 5802,
+      "running": 2,
+      "succeeded": 1246,
+      "cancelled": 0,
+      "oldest_queued_seconds": 58.23276,
+      "db_connections": 1,
+      "elapsed": 70.264787074997
+    },
+    "drain_seconds": 300.0914386120021,
+    "drain_timed_out": true,
+    "peak_application_rss_bytes": 263057408,
+    "peak_db_connections": 8,
+    "statuses": {
+      "201": 6000
+    },
+    "average_application_cpu_cores": 3.2858872880099788
+  },
+  "invariants_passed": false,
+  "criteria": {
+    "exact_offered_count": true,
+    "target_rps": true,
+    "no_generator_drops": true,
+    "error_fraction_le_0_001": true,
+    "scheduled_p95_le_0_5s": true,
+    "scheduled_p99_le_1s": true,
+    "dispatch_p95_le_0_05s": true,
+    "queue_growth_le_20": false,
+    "oldest_queued_le_2s": false,
+    "job_completion_p95_le_5s": false,
+    "drain_le_60s": false,
+    "drain_completed": false
+  },
+  "benchmark_passed": false,
+  "counters": {},
+  "errors": [],
+  "database": "chaos_fe71dd21e98b44b6baa542a2b63d3238",
+  "database_retained": false,
+  "elapsed_seconds": 380.957
+}

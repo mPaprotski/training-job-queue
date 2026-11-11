@@ -1,0 +1,6 @@
+{
+  "planned_keys": 150,
+  "acknowledged_keys": 150,
+  "durable_known_keys": 150,
+  "not_durable_keys": []
+}

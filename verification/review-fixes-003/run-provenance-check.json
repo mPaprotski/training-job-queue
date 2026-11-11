@@ -1,0 +1,36 @@
+[
+  {
+    "run_id": "chaos-20261110T210117Z-seed21-cb2d0810",
+    "source_matches_checkout": true,
+    "checked_files": 19,
+    "runtime_role": {
+      "name": "queue_runtime",
+      "rolsuper": false,
+      "rolcreatedb": false,
+      "rolcreaterole": false
+    },
+    "packages": {
+      "fastapi": "0.162.4",
+      "starlette": "1.10.0",
+      "uvicorn": "0.54.0",
+      "psycopg": "3.3.8"
+    }
+  },
+  {
+    "run_id": "chaos-20261110T210241Z-seed22-36ad9483",
+    "source_matches_checkout": true,
+    "checked_files": 19,
+    "runtime_role": {
+      "name": "queue_runtime",
+      "rolsuper": false,
+      "rolcreatedb": false,
+      "rolcreaterole": false
+    },
+    "packages": {
+      "fastapi": "0.162.4",
+      "starlette": "1.10.0",
+      "uvicorn": "0.54.0",
+      "psycopg": "3.3.8"
+    }
+  }
+]

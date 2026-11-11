@@ -1,0 +1,13 @@
+Run artifacts: /app/verification/harness/chaos-20261110T130219Z-seed11-15fdf8ea
+{"phase": "faults", "elapsed": 2.5, "states": {"queued": 2}, "sigkills": 0}
+{"phase": "faults", "elapsed": 7.6, "states": {"cancelled": 7, "running": 2, "queued": 211, "succeeded": 24}, "sigkills": 2}
+{"phase": "faults", "elapsed": 12.5, "states": {"cancelled": 15, "running": 2, "queued": 399, "succeeded": 101}, "sigkills": 4}
+{"phase": "faults", "elapsed": 17.7, "states": {"cancelled": 18, "running": 2, "queued": 569, "succeeded": 194}, "sigkills": 7}
+{"phase": "drain", "elapsed": 22.0, "states": {"cancelled": 26, "running": 4, "queued": 701, "succeeded": 269}, "sigkills": 8}
+{"phase": "drain", "elapsed": 27.1, "states": {"cancelled": 26, "running": 7, "queued": 563, "succeeded": 404}, "sigkills": 8}
+{"phase": "drain", "elapsed": 32.3, "states": {"cancelled": 26, "running": 4, "queued": 412, "succeeded": 558}, "sigkills": 8}
+{"phase": "drain", "elapsed": 37.5, "states": {"cancelled": 26, "running": 3, "queued": 311, "succeeded": 660}, "sigkills": 8}
+{"phase": "drain", "elapsed": 42.7, "states": {"cancelled": 26, "running": 6, "queued": 156, "succeeded": 812}, "sigkills": 8}
+{"phase": "drain", "elapsed": 47.9, "states": {"cancelled": 26, "running": 7, "queued": 40, "succeeded": 927}, "sigkills": 8}
+{"phase": "drain", "elapsed": 53.0, "states": {"cancelled": 26, "running": 1, "succeeded": 973}, "sigkills": 8}
+{"run_id": "chaos-20261110T130219Z-seed11-15fdf8ea", "passed": true, "expected_jobs": 1000, "actual_jobs": 1000, "states": {"cancelled": 26, "succeeded": 974}, "attempts": {"expired": 2, "cancelled": 10, "failed": 16, "succeeded": 974}, "effects": 974, "violations": [], "counters": {"unique_posts": 1000, "repeated_posts": 116, "cancel_accepted": 28, "cancel_requests": 42, "sigkills": 8, "cancel_running_observed": 20, "cancel_too_late": 14, "sigkills_with_running_job": 5}, "errors": [], "database": "chaos_bb0f8e9e9fb54d4f80dae421123fcdbc", "database_retained": false, "elapsed_seconds": 55.534}

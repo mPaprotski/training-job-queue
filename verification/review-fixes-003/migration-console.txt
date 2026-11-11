@@ -1,0 +1,1 @@
+migrate-1  | INFO:__main__:Migrations complete

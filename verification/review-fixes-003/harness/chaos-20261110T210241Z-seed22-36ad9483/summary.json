@@ -1,0 +1,32 @@
+{
+  "run_id": "chaos-20261110T210241Z-seed22-36ad9483",
+  "passed": true,
+  "expected_jobs": 10000,
+  "actual_jobs": 10000,
+  "states": {
+    "cancelled": 244,
+    "succeeded": 9756
+  },
+  "attempts": {
+    "succeeded": 9756,
+    "failed": 191,
+    "cancelled": 115,
+    "expired": 27
+  },
+  "effects": 9756,
+  "violations": [],
+  "counters": {
+    "unique_posts": 10000,
+    "repeated_posts": 1082,
+    "cancel_accepted": 248,
+    "cancel_requests": 374,
+    "sigkills": 95,
+    "cancel_too_late": 126,
+    "cancel_running_observed": 193,
+    "sigkills_with_running_job": 49
+  },
+  "errors": [],
+  "database": "chaos_431532df72bf4890a08a7a3de747381e",
+  "database_retained": false,
+  "elapsed_seconds": 494.347
+}

@@ -1,0 +1,56 @@
+{
+  "run_id": "chaos-20261110T210117Z-seed21-cb2d0810",
+  "seed": 21,
+  "database": "chaos_780e9bfb339443b980c81b06283f0d2e",
+  "parameters": {
+    "jobs": 1000,
+    "seed": 21,
+    "submitters": 16,
+    "kill_interval": 2,
+    "fault_seconds": 20.0,
+    "lease_seconds": 3,
+    "heartbeat_seconds": 0.5,
+    "poll_seconds": 0.02,
+    "timeout": 180.0,
+    "output_dir": "/out",
+    "keep_database": false
+  },
+  "python": "3.12.16 (main, Nov  5 2026, 07:58:44) [GCC 12.2.0]",
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.36",
+  "cpus_visible": 8,
+  "source_revision": "8db3f12-plus-local-review-fixes-steps-1-7",
+  "source_files_sha256": {
+    "requirements.txt": "f4ebdf5f557fa773280e05e6a7da99ccd917436d7ee51dadb1f6ac4cfca4dd03",
+    "pyproject.toml": "63873331ac30162e0243a2284fcb4ca981e15e6fc3748bba27a1bd43a9485a85",
+    "src/training_job_queue/__init__.py": "c1b6a2c9ece8cd72583f2d0b8791ed47e199e6d2ef645ac72ee0cb50c6b05be4",
+    "src/training_job_queue/api.py": "396d6f2b8dca17fc0f1510e839d764f3b8b9c5f5eb312fc2bc40ed8bee7235e8",
+    "src/training_job_queue/body_limit.py": "c367a2fc42c79bd300413795bcf5b6c6396f05d66904a24e63b472ab0d616985",
+    "src/training_job_queue/db.py": "68234fd197950a6393c2e53fefd1220f6aaf9fb2319f12e4c3f1ca233d75369c",
+    "src/training_job_queue/jobs.py": "c218fb6f71dd1671492a22fa20ad5e1e4d7c88aaa2313c800f315399404a2cc2",
+    "src/training_job_queue/migrate.py": "bd6fcf91acdc6686be2ceda573dde47dfc61c9c1415f7dea8fed976ec9730963",
+    "src/training_job_queue/models.py": "fbcb51caf42d92735a3b3961cc01191e2ef8062e97d89088112071f47b2d4160",
+    "src/training_job_queue/permissions.py": "d66d19fd8bb26516f5d911d39de4f00d7a72de2a09bb83d35ed8029a74863e9a",
+    "src/training_job_queue/processing.py": "aa97c227472af068de813b9607b311b059390c4e5930d8073bc38c214748523d",
+    "src/training_job_queue/settings.py": "35d64d6c6577ddc249b63f2223f68efd69c379e3e52e69b022c021a0d9bd8f03",
+    "src/training_job_queue/worker.py": "3d3757218165b575c0249e2533584988407955371676ffe4d22a56622ccb39cc",
+    "harness/__init__.py": "ce9ce2cd9c99e8529ac173b189274f430132c1ef2bd0385d2a6a83f5c9eb1d89",
+    "harness/chaos.py": "1fffe26ab94218716682f90b463707eb82b19c803fef433d1a7252228bf3ca40",
+    "harness/docker_stats.py": "b26497c994e696571ea17688b5ade1c6c11e61441cd74d4fbde362740fca5b6e",
+    "harness/invariants.py": "e26e05367519711b2acf6c60ad5c4f3c95a8a8dbc836077dd29b732f76b9e56e",
+    "harness/load.py": "76815718abb196a94b13d07443dd8097306c2f8659e45914a715497f27db11c7",
+    "migrations/0001_job_schema.sql": "a0d35484dcec9a402c8655adc74ded39f0770446b0d787101c97cb916c380d27"
+  },
+  "packages": {
+    "fastapi": "0.162.4",
+    "starlette": "1.10.0",
+    "uvicorn": "0.54.0",
+    "psycopg": "3.3.8"
+  },
+  "runtime_role": {
+    "name": "queue_runtime",
+    "rolsuper": false,
+    "rolcreatedb": false,
+    "rolcreaterole": false
+  },
+  "postgres": "PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit"
+}

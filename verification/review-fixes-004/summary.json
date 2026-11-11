@@ -1,0 +1,54 @@
+{
+  "baseline_commit": "8db3f12f5321a69c6148685fa0737b6f242718d8",
+  "integration_full_initial": 81,
+  "additional_regression_cases": 2,
+  "unit_tests": 20,
+  "runtime_dependency_audit": {
+    "distributions": 17,
+    "known_vulnerabilities": 0
+  },
+  "full_chaos": {
+    "run_id": "chaos-20261110T212015Z-seed31-ff161d72",
+    "passed": true,
+    "expected_jobs": 10000,
+    "actual_jobs": 10000,
+    "states": {
+      "cancelled": 303,
+      "succeeded": 9697
+    },
+    "attempts": {
+      "succeeded": 9697,
+      "failed": 190,
+      "cancelled": 201,
+      "expired": 9
+    },
+    "effects": 9697,
+    "violations": [],
+    "counters": {
+      "unique_posts": 10000,
+      "repeated_posts": 1216,
+      "cancel_accepted": 308,
+      "cancel_requests": 440,
+      "cancel_running_observed": 238,
+      "cancel_too_late": 132,
+      "sigkills": 33,
+      "sigkills_with_running_job": 30
+    },
+    "errors": [],
+    "database": "chaos_a2c2500645544b03ad7119abefa16aff",
+    "database_retained": false,
+    "elapsed_seconds": 226.912
+  },
+  "fixed_capacity_runs": 6,
+  "fixed_capacity_passes": 2,
+  "diagnostic_repeat_passed": true,
+  "selected_defaults": {
+    "workers": 4,
+    "api_pool_size": 4,
+    "worker_pool_size": 1,
+    "max_outstanding_jobs": 1000
+  },
+  "verdict": "DONT_SHIP_UNQUALIFIED_100_RPS",
+  "published": false,
+  "email_sent": false
+}

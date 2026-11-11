@@ -1,0 +1,84 @@
+x-app: &app
+  build: .
+  image: training-job-queue:local
+  environment:
+    DATABASE_URL: postgresql://queue_runtime:queue_runtime@db:5432/queue
+    LEASE_SECONDS: ${LEASE_SECONDS:-15}
+    HEARTBEAT_SECONDS: ${HEARTBEAT_SECONDS:-3}
+    MAX_ATTEMPTS: ${MAX_ATTEMPTS:-5}
+    POLL_SECONDS: ${POLL_SECONDS:-0.1}
+    SIMULATION_SECONDS: ${SIMULATION_SECONDS:-0.1}
+    MAX_OUTSTANDING_JOBS: ${MAX_OUTSTANDING_JOBS:-1000}
+    DB_POOL_ENABLED: ${DB_POOL_ENABLED:-1}
+    DB_POOL_SIZE: ${DB_POOL_SIZE:-4}
+    DB_POOL_TIMEOUT: ${DB_POOL_TIMEOUT:-1}
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: queue_admin
+      POSTGRES_PASSWORD: queue_admin
+      POSTGRES_DB: queue
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./docker/postgres/001-roles.sql:/docker-entrypoint-initdb.d/001-roles.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h 127.0.0.1 -U queue_runtime -d queue"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+  migrate:
+    <<: *app
+    environment:
+      DATABASE_URL: postgresql://queue_migrator:queue_migrator@db:5432/queue
+    command: ["sh", "-c", "python -m training_job_queue.migrate && python -m training_job_queue.permissions"]
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: "no"
+
+  api:
+    <<: *app
+    ports:
+      - "127.0.0.1:${API_PORT:-8000}:8000"
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/ready', timeout=4)"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  worker:
+    <<: *app
+    command: ["python", "-m", "training_job_queue.worker"]
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    deploy:
+      replicas: ${WORKER_REPLICAS:-16}
+    restart: unless-stopped
+
+  chaos:
+    <<: *app
+    environment:
+      DATABASE_URL: postgresql://queue_tools:queue_tools@db:5432/queue
+      RUNTIME_DATABASE_USER: queue_runtime
+      RUNTIME_DATABASE_PASSWORD: queue_runtime
+    profiles: ["tools"]
+    user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+    init: true
+    command: ["python", "-m", "harness.chaos"]
+    volumes:
+      - ./results:/app/results
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  postgres-data:

@@ -1,0 +1,4 @@
+{"queued": 0, "running": 0, "succeeded": 50, "cancelled": 0, "oldest_queued_seconds": 0.0, "db_connections": 1, "elapsed": -0.1634486589991866, "application_cpu_seconds": 13.89, "application_rss_bytes": 258760704}
+{"queued": 0, "running": 1, "succeeded": 51, "cancelled": 0, "oldest_queued_seconds": 0.0, "db_connections": 2, "elapsed": 0.9113840280006116, "application_cpu_seconds": 14.18, "application_rss_bytes": 258760704}
+{"queued": 0, "running": 0, "succeeded": 52, "cancelled": 0, "oldest_queued_seconds": 0.0, "db_connections": 1, "elapsed": 1.943290874000013, "application_cpu_seconds": 14.42, "application_rss_bytes": 258760704}
+{"queued": 0, "running": 1, "succeeded": 53, "cancelled": 0, "oldest_queued_seconds": 0.0, "db_connections": 1, "elapsed": 2.9798268280010234, "application_cpu_seconds": 14.7, "application_rss_bytes": 258760704}

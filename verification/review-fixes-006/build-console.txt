@@ -1,0 +1,69 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  337.9kB
+Step 1/14 : FROM python:3.12-slim-bookworm
+ ---> 313cf8f190a1
+Step 2/14 : ENV PYTHONUNBUFFERED=1     PYTHONDONTWRITEBYTECODE=1     PIP_NO_CACHE_DIR=1
+ ---> Using cache
+ ---> e3b570c1c3b0
+Step 3/14 : WORKDIR /app
+ ---> Using cache
+ ---> de3ad0534932
+Step 4/14 : COPY requirements.txt ./
+ ---> Using cache
+ ---> fd7cf355beb9
+Step 5/14 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 203a890775e4
+Step 6/14 : COPY pyproject.toml ./
+ ---> Using cache
+ ---> 35ccea85080b
+Step 7/14 : COPY src ./src
+ ---> d4116534cfb2
+Step 8/14 : RUN pip install --no-deps .
+ ---> Running in 96afba49004b
+Processing /app
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: training-job-queue
+  Building wheel for training-job-queue (pyproject.toml): started
+  Building wheel for training-job-queue (pyproject.toml): finished with status 'done'
+  Created wheel for training-job-queue: filename=training_job_queue-0.1.0-py3-none-any.whl size=15183 sha256=f3b0459806f530b94fc54137eb207f905ffcb5e95eaa8ec87332b2672f780b68
+  Stored in directory: /tmp/pip-ephem-wheel-cache-vog5t00q/wheels/54/1b/b7/aa63e25c8f14f4f2ae7b04e6097bdecb770e455c5c1ee0a600
+Successfully built training-job-queue
+Installing collected packages: training-job-queue
+Successfully installed training-job-queue-0.1.0
+[91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+[0m[91m
+[notice] A new release of pip is available: 25.0.1 -> 26.3
+[notice] To update, run: pip install --upgrade pip
+[0m ---> Removed intermediate container 96afba49004b
+ ---> 4f56d57de09c
+Step 9/14 : COPY migrations ./migrations
+ ---> 12d36be6a546
+Step 10/14 : COPY harness ./harness
+ ---> ba46b6bc6dd3
+Step 11/14 : RUN useradd --create-home --uid 10001 app
+ ---> Running in 31689a4119dd
+ ---> Removed intermediate container 31689a4119dd
+ ---> 6b7713b31724
+Step 12/14 : USER app
+ ---> Running in 756952eb396f
+ ---> Removed intermediate container 756952eb396f
+ ---> 13edf86b68c5
+Step 13/14 : EXPOSE 8000
+ ---> Running in 28e9f36ca0da
+ ---> Removed intermediate container 28e9f36ca0da
+ ---> f156d76d6e6a
+Step 14/14 : CMD ["uvicorn", "training_job_queue.api:app", "--host", "0.0.0.0", "--port", "8000"]
+ ---> Running in 9f6f63255dca
+ ---> Removed intermediate container 9f6f63255dca
+ ---> 082a20876a82
+Successfully built 082a20876a82
+Successfully tagged training-job-queue:review-006

@@ -1,0 +1,19 @@
+{
+  "integration_tests": 88,
+  "unit_tests": 21,
+  "full_chaos_passed": true,
+  "load_runs": 8,
+  "load_passes": 7,
+  "load_failures_preserved": 1,
+  "selected_config": {
+    "compose_workers": 16,
+    "poll_seconds": 0.1,
+    "api_pool_max": 4,
+    "worker_pool_max": 1,
+    "admission_slots": 1000
+  },
+  "selected_config_all_confirmations_passed": true,
+  "original_container_ids_unchanged": true,
+  "historical_files_unchanged": 551,
+  "publication": false
+}

@@ -1,0 +1,46 @@
+{
+  "run_id": "chaos-20261110T073008Z-seed2-e01392da",
+  "seed": 2,
+  "database": "chaos_af6195f116ce4d99918566a55cc65e68",
+  "parameters": {
+    "jobs": 10000,
+    "seed": 2,
+    "submitters": 16,
+    "kill_interval": 2,
+    "fault_seconds": 30,
+    "lease_seconds": 15.0,
+    "heartbeat_seconds": 3.0,
+    "poll_seconds": 1.0,
+    "timeout": 900,
+    "output_dir": "results",
+    "keep_database": false
+  },
+  "python": "3.12.16 (main, Nov  5 2026, 07:58:44) [GCC 12.2.0]",
+  "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.36",
+  "cpus_visible": 8,
+  "source_revision": "uncommitted/not supplied",
+  "source_files_sha256": {
+    "requirements.txt": "f28681ef5c644c7c1576cc1a9949ac512fc25bdc1ca14d7a717b201e25812c03",
+    "pyproject.toml": "4e8ae48fcc96edc11c3542c71b6087bc688eac07dc6be0bf5f56a3fffdb3867e",
+    "src/training_job_queue/__init__.py": "c1b6a2c9ece8cd72583f2d0b8791ed47e199e6d2ef645ac72ee0cb50c6b05be4",
+    "src/training_job_queue/api.py": "8bbad733950f270523f70296e9a4eac37b4904480d0bcaa5b742b19478eab6f6",
+    "src/training_job_queue/db.py": "68234fd197950a6393c2e53fefd1220f6aaf9fb2319f12e4c3f1ca233d75369c",
+    "src/training_job_queue/jobs.py": "c218fb6f71dd1671492a22fa20ad5e1e4d7c88aaa2313c800f315399404a2cc2",
+    "src/training_job_queue/migrate.py": "bd6fcf91acdc6686be2ceda573dde47dfc61c9c1415f7dea8fed976ec9730963",
+    "src/training_job_queue/models.py": "fbcb51caf42d92735a3b3961cc01191e2ef8062e97d89088112071f47b2d4160",
+    "src/training_job_queue/processing.py": "aa97c227472af068de813b9607b311b059390c4e5930d8073bc38c214748523d",
+    "src/training_job_queue/settings.py": "35d64d6c6577ddc249b63f2223f68efd69c379e3e52e69b022c021a0d9bd8f03",
+    "src/training_job_queue/worker.py": "3d3757218165b575c0249e2533584988407955371676ffe4d22a56622ccb39cc",
+    "harness/__init__.py": "ce9ce2cd9c99e8529ac173b189274f430132c1ef2bd0385d2a6a83f5c9eb1d89",
+    "harness/chaos.py": "1b581470545108c093c40be035d21b51395cb25c57bbbd0a268006f1d76d584c",
+    "harness/invariants.py": "38e9e911b53eae142bf872d74a7981dd5e1bc5c9f0fddf5be72025805b39ae26",
+    "harness/load.py": "ff765763079bca5a08175fa396b2f744e9c70c738140206c6379475d5afa6d82",
+    "migrations/0001_job_schema.sql": "a0d35484dcec9a402c8655adc74ded39f0770446b0d787101c97cb916c380d27"
+  },
+  "packages": {
+    "fastapi": "0.115.6",
+    "uvicorn": "0.34.0",
+    "psycopg": "3.2.3"
+  },
+  "postgres": "PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit"
+}

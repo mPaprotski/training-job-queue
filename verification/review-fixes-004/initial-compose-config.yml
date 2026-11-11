@@ -1,0 +1,134 @@
+name: soup-review-911
+services:
+  api:
+    build:
+      context: /home/paprojky/Music/soup_test/training-job-queue
+      dockerfile: Dockerfile
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+        required: true
+    environment:
+      DATABASE_URL: postgresql://queue_runtime:queue_runtime@db:5432/queue
+      DB_POOL_ENABLED: "1"
+      DB_POOL_SIZE: "4"
+      DB_POOL_TIMEOUT: "1"
+      HEARTBEAT_SECONDS: "3"
+      LEASE_SECONDS: "15"
+      MAX_ATTEMPTS: "5"
+      MAX_OUTSTANDING_JOBS: "1000"
+      POLL_SECONDS: "1"
+      SIMULATION_SECONDS: "0.1"
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/ready', timeout=4)
+      timeout: 5s
+      interval: 5s
+      retries: 10
+    image: training-job-queue:review-911
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        host_ip: 127.0.0.1
+        target: 8000
+        published: "18082"
+        protocol: tcp
+    restart: unless-stopped
+  db:
+    environment:
+      POSTGRES_DB: queue
+      POSTGRES_PASSWORD: queue_admin
+      POSTGRES_USER: queue_admin
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -h 127.0.0.1 -U queue_runtime -d queue
+      timeout: 3s
+      interval: 2s
+      retries: 20
+    image: postgres:16-alpine
+    networks:
+      default: null
+    restart: unless-stopped
+    volumes:
+      - type: volume
+        source: postgres-data
+        target: /var/lib/postgresql/data
+        volume: {}
+      - type: bind
+        source: /home/paprojky/Music/soup_test/training-job-queue/docker/postgres/001-roles.sql
+        target: /docker-entrypoint-initdb.d/001-roles.sql
+        read_only: true
+        bind:
+          create_host_path: true
+  migrate:
+    build:
+      context: /home/paprojky/Music/soup_test/training-job-queue
+      dockerfile: Dockerfile
+    command:
+      - sh
+      - -c
+      - python -m training_job_queue.migrate && python -m training_job_queue.permissions
+    depends_on:
+      db:
+        condition: service_healthy
+        required: true
+    environment:
+      DATABASE_URL: postgresql://queue_migrator:queue_migrator@db:5432/queue
+    image: training-job-queue:review-911
+    networks:
+      default: null
+    restart: "no"
+  worker:
+    build:
+      context: /home/paprojky/Music/soup_test/training-job-queue
+      dockerfile: Dockerfile
+    command:
+      - python
+      - -m
+      - training_job_queue.worker
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+        required: true
+    deploy:
+      replicas: 4
+    environment:
+      DATABASE_URL: postgresql://queue_runtime:queue_runtime@db:5432/queue
+      DB_POOL_ENABLED: "1"
+      DB_POOL_SIZE: "4"
+      DB_POOL_TIMEOUT: "1"
+      HEARTBEAT_SECONDS: "3"
+      LEASE_SECONDS: "15"
+      MAX_ATTEMPTS: "5"
+      MAX_OUTSTANDING_JOBS: "1000"
+      POLL_SECONDS: "1"
+      SIMULATION_SECONDS: "0.1"
+    image: training-job-queue:review-911
+    networks:
+      default: null
+    restart: unless-stopped
+networks:
+  default:
+    name: soup-review-911_default
+volumes:
+  postgres-data:
+    name: soup-review-911_postgres-data
+x-app:
+  build: .
+  environment:
+    DATABASE_URL: postgresql://queue_runtime:queue_runtime@db:5432/queue
+    DB_POOL_ENABLED: "1"
+    DB_POOL_SIZE: "4"
+    DB_POOL_TIMEOUT: "1"
+    HEARTBEAT_SECONDS: "3"
+    LEASE_SECONDS: "15"
+    MAX_ATTEMPTS: "5"
+    MAX_OUTSTANDING_JOBS: "1000"
+    POLL_SECONDS: "1"
+    SIMULATION_SECONDS: "0.1"
+  image: training-job-queue:local

@@ -1,0 +1,6 @@
+{
+  "setuptools": {
+    "version": "84.2.1",
+    "requires_python": ">=3.10"
+  }
+}

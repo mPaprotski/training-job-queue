@@ -1,0 +1,4 @@
+Run artifacts: results/chaos-20261109T215728Z-seed20261111-f00f6650
+{"phase": "faults", "elapsed": 2.2, "states": {"queued": 4}, "sigkills": 0}
+{"run_id": "chaos-20261109T215728Z-seed20261111-f00f6650", "passed": false, "counters": {"unique_posts": 104, "repeated_posts": 11, "cancel_accepted": 6, "cancel_requests": 6, "sigkills": 1}, "errors": [{"where": "run", "error": "Deadline during submissions/fault phase"}], "elapsed_seconds": 4.55}
+

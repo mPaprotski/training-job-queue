@@ -1,0 +1,20 @@
+{
+  "planned_keys": 7050,
+  "acknowledged_keys": 7037,
+  "durable_known_keys": 7037,
+  "not_durable_keys": [
+    "load-20261110T213239Z-seed41-888b0d7b:measure:5905",
+    "load-20261110T213239Z-seed41-888b0d7b:measure:5911",
+    "load-20261110T213239Z-seed41-888b0d7b:measure:5913",
+    "load-20261110T213239Z-seed41-888b0d7b:measure:5915",
+    "load-20261110T213239Z-seed41-888b0d7b:measure:5917",
+    "load-20261110T213239Z-seed41-888b0d7b:measure:5918",
+    "load-20261110T213239Z-seed41-888b0d7b:measure:5919",
+    "load-20261110T213239Z-seed41-888b0d7b:measure:5921",
+    "load-20261110T213239Z-seed41-888b0d7b:measure:5922",
+    "load-20261110T213239Z-seed41-888b0d7b:measure:5927",
+    "load-20261110T213239Z-seed41-888b0d7b:measure:5928",
+    "load-20261110T213239Z-seed41-888b0d7b:measure:5929",
+    "load-20261110T213239Z-seed41-888b0d7b:measure:5930"
+  ]
+}

@@ -1,0 +1,109 @@
+test_actual_size_is_enforced_without_header (test_body_limit.BodyLimitTests.test_actual_size_is_enforced_without_header) ... ok
+test_chunks_are_counted_together_even_with_small_declared_length (test_body_limit.BodyLimitTests.test_chunks_are_counted_together_even_with_small_declared_length) ... ok
+test_disconnect_does_not_execute_endpoint (test_body_limit.BodyLimitTests.test_disconnect_does_not_execute_endpoint) ... ok
+test_exact_limit_is_forwarded (test_body_limit.BodyLimitTests.test_exact_limit_is_forwarded) ... ok
+test_large_declared_length_is_rejected_before_reading (test_body_limit.BodyLimitTests.test_large_declared_length_is_rejected_before_reading) ... ok
+test_non_http_scope_is_forwarded (test_body_limit.BodyLimitTests.test_non_http_scope_is_forwarded) ... ok
+test_small_chunks_are_replayed_as_one_body (test_body_limit.BodyLimitTests.test_small_chunks_are_replayed_as_one_body) ... ok
+test_custom_project_filter_selects_only_database_and_tools (test_docker_stats.DockerStatsTests.test_custom_project_filter_selects_only_database_and_tools) ... ERROR
+test_docker_ps_failure_is_explicit (test_docker_stats.DockerStatsTests.test_docker_ps_failure_is_explicit) ... ERROR
+test_no_matching_containers_is_explicit (test_docker_stats.DockerStatsTests.test_no_matching_containers_is_explicit) ... ERROR
+test_malformed_json_is_rejected (test_load.LoadCancellationTests.test_malformed_json_is_rejected) ... ok
+test_matching_cancelled_job_is_accepted (test_load.LoadCancellationTests.test_matching_cancelled_job_is_accepted) ... ok
+test_missing_id_is_rejected (test_load.LoadCancellationTests.test_missing_id_is_rejected) ... ok
+test_non_cancelled_state_is_rejected (test_load.LoadCancellationTests.test_non_cancelled_state_is_rejected) ... ok
+test_other_job_is_rejected_and_both_ids_are_logged (test_load.LoadCancellationTests.test_other_job_is_rejected_and_both_ids_are_logged) ... ok
+test_server_error_is_rejected (test_load.LoadCancellationTests.test_server_error_is_rejected) ... ok
+test_terminal_conflict_is_accepted_without_recording_cancellation (test_load.LoadCancellationTests.test_terminal_conflict_is_accepted_without_recording_cancellation) ... ok
+
+======================================================================
+ERROR: test_custom_project_filter_selects_only_database_and_tools (test_docker_stats.DockerStatsTests.test_custom_project_filter_selects_only_database_and_tools)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/unit/test_docker_stats.py", line 29, in test_custom_project_filter_selects_only_database_and_tools
+    sample, calls = self.sample(SimpleNamespace(returncode=0, stdout='db123 db\napi456 api\n', stderr=''))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/unit/test_docker_stats.py", line 15, in sample
+    with TemporaryDirectory() as directory:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 940, in __init__
+    self.name = mkdtemp(suffix, prefix, dir)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 427, in mkdtemp
+    prefix, suffix, dir, output_type = _sanitize_params(prefix, suffix, dir)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 127, in _sanitize_params
+    dir = gettempdir()
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 369, in gettempdir
+    return _os.fsdecode(_gettempdir())
+                        ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 362, in _gettempdir
+    tempdir = _get_default_tempdir()
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 224, in _get_default_tempdir
+    raise FileNotFoundError(_errno.ENOENT,
+FileNotFoundError: [Errno 2] No usable temporary directory found in ['/tmp', '/var/tmp', '/usr/tmp', '/app']
+
+======================================================================
+ERROR: test_docker_ps_failure_is_explicit (test_docker_stats.DockerStatsTests.test_docker_ps_failure_is_explicit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/unit/test_docker_stats.py", line 44, in test_docker_ps_failure_is_explicit
+    sample, calls = self.sample(SimpleNamespace(returncode=1, stdout='', stderr='permission denied'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/unit/test_docker_stats.py", line 15, in sample
+    with TemporaryDirectory() as directory:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 940, in __init__
+    self.name = mkdtemp(suffix, prefix, dir)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 427, in mkdtemp
+    prefix, suffix, dir, output_type = _sanitize_params(prefix, suffix, dir)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 127, in _sanitize_params
+    dir = gettempdir()
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 369, in gettempdir
+    return _os.fsdecode(_gettempdir())
+                        ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 362, in _gettempdir
+    tempdir = _get_default_tempdir()
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 224, in _get_default_tempdir
+    raise FileNotFoundError(_errno.ENOENT,
+FileNotFoundError: [Errno 2] No usable temporary directory found in ['/tmp', '/var/tmp', '/usr/tmp', '/app']
+
+======================================================================
+ERROR: test_no_matching_containers_is_explicit (test_docker_stats.DockerStatsTests.test_no_matching_containers_is_explicit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/app/tests/unit/test_docker_stats.py", line 38, in test_no_matching_containers_is_explicit
+    sample, calls = self.sample(SimpleNamespace(returncode=0, stdout='', stderr=''))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/tests/unit/test_docker_stats.py", line 15, in sample
+    with TemporaryDirectory() as directory:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 940, in __init__
+    self.name = mkdtemp(suffix, prefix, dir)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 427, in mkdtemp
+    prefix, suffix, dir, output_type = _sanitize_params(prefix, suffix, dir)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 127, in _sanitize_params
+    dir = gettempdir()
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 369, in gettempdir
+    return _os.fsdecode(_gettempdir())
+                        ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 362, in _gettempdir
+    tempdir = _get_default_tempdir()
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/tempfile.py", line 224, in _get_default_tempdir
+    raise FileNotFoundError(_errno.ENOENT,
+FileNotFoundError: [Errno 2] No usable temporary directory found in ['/tmp', '/var/tmp', '/usr/tmp', '/app']
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.068s
+
+FAILED (errors=3)

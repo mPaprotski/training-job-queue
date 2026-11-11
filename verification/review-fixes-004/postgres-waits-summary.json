@@ -1,0 +1,221 @@
+{
+  "sample_count": 785,
+  "sampling_errors": [],
+  "nonidle_session_observations": [
+    {
+      "state": "active",
+      "wait_type": "Lock",
+      "event": "advisory",
+      "observations": 507
+    },
+    {
+      "state": "idle in transaction",
+      "wait_type": "Client",
+      "event": "ClientRead",
+      "observations": 284
+    },
+    {
+      "state": "active",
+      "wait_type": "IO",
+      "event": "WALSync",
+      "observations": 246
+    },
+    {
+      "state": "active",
+      "wait_type": null,
+      "event": null,
+      "observations": 218
+    },
+    {
+      "state": "active",
+      "wait_type": "LWLock",
+      "event": "WALWrite",
+      "observations": 167
+    },
+    {
+      "state": "idle in transaction",
+      "wait_type": null,
+      "event": null,
+      "observations": 135
+    },
+    {
+      "state": "active",
+      "wait_type": "Client",
+      "event": "ClientRead",
+      "observations": 94
+    },
+    {
+      "state": "idle in transaction",
+      "wait_type": "IO",
+      "event": "WALSync",
+      "observations": 7
+    },
+    {
+      "state": "idle in transaction",
+      "wait_type": "LWLock",
+      "event": "WALWrite",
+      "observations": 4
+    },
+    {
+      "state": "idle in transaction",
+      "wait_type": "Lock",
+      "event": "advisory",
+      "observations": 3
+    },
+    {
+      "state": "idle in transaction",
+      "wait_type": "IO",
+      "event": "WALWrite",
+      "observations": 2
+    },
+    {
+      "state": "active",
+      "wait_type": "LWLock",
+      "event": "BufferContent",
+      "observations": 1
+    }
+  ],
+  "advisory_queue_root_observations": [
+    {
+      "state": "active",
+      "wait_type": "IO",
+      "event": "WALSync",
+      "query_prefix": "COMMIT",
+      "observations": 139
+    },
+    {
+      "state": "active",
+      "wait_type": "LWLock",
+      "event": "WALWrite",
+      "query_prefix": "COMMIT",
+      "observations": 105
+    },
+    {
+      "state": "active",
+      "wait_type": null,
+      "event": null,
+      "query_prefix": "SELECT count(*) AS n FROM (\n                SELECT 1 FROM jobs WHERE state IN ('queued', '",
+      "observations": 47
+    },
+    {
+      "state": "idle in transaction",
+      "wait_type": "Client",
+      "event": "ClientRead",
+      "query_prefix": "SELECT pg_advisory_xact_lock($1)",
+      "observations": 39
+    },
+    {
+      "state": "idle in transaction",
+      "wait_type": "Client",
+      "event": "ClientRead",
+      "query_prefix": "INSERT INTO jobs (idempotency_key, payload, max_attempts)\n               VALUES ($1, $2, $",
+      "observations": 36
+    },
+    {
+      "state": "idle in transaction",
+      "wait_type": "Client",
+      "event": "ClientRead",
+      "query_prefix": "SELECT *, payload = $1 AS same_payload FROM jobs WHERE idempotency_key = $2",
+      "observations": 35
+    },
+    {
+      "state": "idle in transaction",
+      "wait_type": "Client",
+      "event": "ClientRead",
+      "query_prefix": "SELECT count(*) AS n FROM (\n                SELECT 1 FROM jobs WHERE state IN ('queued', '",
+      "observations": 33
+    },
+    {
+      "state": "active",
+      "wait_type": null,
+      "event": null,
+      "query_prefix": "INSERT INTO jobs (idempotency_key, payload, max_attempts)\n               VALUES ($1, $2, $",
+      "observations": 19
+    },
+    {
+      "state": "active",
+      "wait_type": "Lock",
+      "event": "advisory",
+      "query_prefix": "SELECT pg_advisory_xact_lock($1)",
+      "observations": 16
+    },
+    {
+      "state": "idle in transaction",
+      "wait_type": null,
+      "event": null,
+      "query_prefix": "SELECT pg_advisory_xact_lock($1)",
+      "observations": 8
+    },
+    {
+      "state": "idle in transaction",
+      "wait_type": null,
+      "event": null,
+      "query_prefix": "SELECT count(*) AS n FROM (\n                SELECT 1 FROM jobs WHERE state IN ('queued', '",
+      "observations": 4
+    },
+    {
+      "state": "idle in transaction",
+      "wait_type": null,
+      "event": null,
+      "query_prefix": "SELECT *, payload = $1 AS same_payload FROM jobs WHERE idempotency_key = $2",
+      "observations": 4
+    },
+    {
+      "state": "active",
+      "wait_type": "Client",
+      "event": "ClientRead",
+      "query_prefix": "SELECT pg_advisory_xact_lock($1)",
+      "observations": 4
+    },
+    {
+      "state": "active",
+      "wait_type": "Client",
+      "event": "ClientRead",
+      "query_prefix": "INSERT INTO jobs (idempotency_key, payload, max_attempts)\n               VALUES ($1, $2, $",
+      "observations": 3
+    },
+    {
+      "state": "idle in transaction",
+      "wait_type": null,
+      "event": null,
+      "query_prefix": "INSERT INTO jobs (idempotency_key, payload, max_attempts)\n               VALUES ($1, $2, $",
+      "observations": 3
+    },
+    {
+      "state": "idle in transaction",
+      "wait_type": "LWLock",
+      "event": "WALWrite",
+      "query_prefix": "INSERT INTO jobs (idempotency_key, payload, max_attempts)\n               VALUES ($1, $2, $",
+      "observations": 3
+    },
+    {
+      "state": "active",
+      "wait_type": null,
+      "event": null,
+      "query_prefix": "SELECT *, payload = $1 AS same_payload FROM jobs WHERE idempotency_key = $2",
+      "observations": 2
+    },
+    {
+      "state": "active",
+      "wait_type": "Client",
+      "event": "ClientRead",
+      "query_prefix": "SELECT *, payload = $1 AS same_payload FROM jobs WHERE idempotency_key = $2",
+      "observations": 2
+    },
+    {
+      "state": "active",
+      "wait_type": null,
+      "event": null,
+      "query_prefix": "SELECT pg_advisory_xact_lock($1)",
+      "observations": 1
+    },
+    {
+      "state": "active",
+      "wait_type": "Client",
+      "event": "ClientRead",
+      "query_prefix": "SELECT count(*) AS n FROM (\n                SELECT 1 FROM jobs WHERE state IN ('queued', '",
+      "observations": 1
+    }
+  ],
+  "interpretation": "Sampled session observations, not independent requests or proof of the original run's unique cause. Diagnostic repeat has an additional observer."
+}

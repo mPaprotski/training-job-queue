@@ -1,0 +1,66 @@
+[
+  {
+    "run_id": "chaos-20261111T081108Z-seed51-4174187c",
+    "application_and_sql_match": true,
+    "changed_harness_files": [
+      "harness/load.py"
+    ],
+    "note": "load CLI gained explicit poll argument; earlier runs keep their original harness hashes"
+  },
+  {
+    "run_id": "load-20261111T081516Z-seed61-2bf26d95",
+    "application_and_sql_match": true,
+    "changed_harness_files": [
+      "harness/load.py"
+    ],
+    "note": "load CLI gained explicit poll argument; earlier runs keep their original harness hashes"
+  },
+  {
+    "run_id": "load-20261111T081633Z-seed62-0697c983",
+    "application_and_sql_match": true,
+    "changed_harness_files": [
+      "harness/load.py"
+    ],
+    "note": "load CLI gained explicit poll argument; earlier runs keep their original harness hashes"
+  },
+  {
+    "run_id": "load-20261111T081753Z-seed63-e86c2947",
+    "application_and_sql_match": true,
+    "changed_harness_files": [
+      "harness/load.py"
+    ],
+    "note": "load CLI gained explicit poll argument; earlier runs keep their original harness hashes"
+  },
+  {
+    "run_id": "load-20261111T081913Z-seed64-121f7b3a",
+    "application_and_sql_match": true,
+    "changed_harness_files": [
+      "harness/load.py"
+    ],
+    "note": "load CLI gained explicit poll argument; earlier runs keep their original harness hashes"
+  },
+  {
+    "run_id": "load-20261111T082158Z-seed71-2df81268",
+    "application_and_sql_match": true,
+    "changed_harness_files": [],
+    "note": "all recorded files match"
+  },
+  {
+    "run_id": "load-20261111T082318Z-seed72-bc1e9a0f",
+    "application_and_sql_match": true,
+    "changed_harness_files": [],
+    "note": "all recorded files match"
+  },
+  {
+    "run_id": "load-20261111T082438Z-seed73-db806075",
+    "application_and_sql_match": true,
+    "changed_harness_files": [],
+    "note": "all recorded files match"
+  },
+  {
+    "run_id": "load-20261111T082559Z-seed74-325d01ab",
+    "application_and_sql_match": true,
+    "changed_harness_files": [],
+    "note": "all recorded files match"
+  }
+]

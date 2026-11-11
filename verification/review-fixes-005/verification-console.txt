@@ -1,0 +1,13 @@
+{"phase": "build-console.txt", "started": true}
+{"phase": "build-console.txt", "passed": true}
+{"phase": "startup-console.txt", "started": true}
+{"phase": "startup-console.txt", "passed": true}
+{"phase": "containers.jsonl", "started": true}
+{"phase": "containers.jsonl", "passed": true}
+{"phase": "integration-tests.txt", "started": true}
+{"phase": "integration-tests.txt", "passed": true}
+{"phase": "unit-tests.txt", "started": true}
+{"phase": "unit-tests.txt", "passed": true}
+{"phase": "pip-check.txt", "started": true}
+{"phase": "pip-check.txt", "passed": true}
+Clean-checkout verification passed

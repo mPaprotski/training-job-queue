@@ -1,0 +1,13 @@
+{
+  "default_transaction_isolation": "read committed",
+  "fsync": "on",
+  "full_page_writes": "on",
+  "max_connections": 100,
+  "shared_buffers": {
+    "setting": 16384,
+    "unit": "8kB",
+    "bytes": 134217728
+  },
+  "synchronous_commit": "on",
+  "source": "pg_settings queried through the running project API container on 2026-11-10"
+}

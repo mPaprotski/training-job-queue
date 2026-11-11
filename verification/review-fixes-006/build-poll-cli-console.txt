@@ -1,0 +1,50 @@
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  423.4kB
+Step 1/14 : FROM python:3.12-slim-bookworm
+ ---> 313cf8f190a1
+Step 2/14 : ENV PYTHONUNBUFFERED=1     PYTHONDONTWRITEBYTECODE=1     PIP_NO_CACHE_DIR=1
+ ---> Using cache
+ ---> e3b570c1c3b0
+Step 3/14 : WORKDIR /app
+ ---> Using cache
+ ---> de3ad0534932
+Step 4/14 : COPY requirements.txt ./
+ ---> Using cache
+ ---> fd7cf355beb9
+Step 5/14 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> 203a890775e4
+Step 6/14 : COPY pyproject.toml ./
+ ---> Using cache
+ ---> 35ccea85080b
+Step 7/14 : COPY src ./src
+ ---> Using cache
+ ---> 7d09cdbb747e
+Step 8/14 : RUN pip install --no-deps .
+ ---> Using cache
+ ---> 41d4139259b5
+Step 9/14 : COPY migrations ./migrations
+ ---> 332cb438f97f
+Step 10/14 : COPY harness ./harness
+ ---> db00000e0aa0
+Step 11/14 : RUN useradd --create-home --uid 10001 app
+ ---> Running in d73231113802
+ ---> Removed intermediate container d73231113802
+ ---> 8e2d906c94a3
+Step 12/14 : USER app
+ ---> Running in 0747e6e9112f
+ ---> Removed intermediate container 0747e6e9112f
+ ---> 61dfb282d697
+Step 13/14 : EXPOSE 8000
+ ---> Running in 9cc44178d11b
+ ---> Removed intermediate container 9cc44178d11b
+ ---> 1fcef28dc1f8
+Step 14/14 : CMD ["uvicorn", "training_job_queue.api:app", "--host", "0.0.0.0", "--port", "8000"]
+ ---> Running in d20fbc6e00c2
+ ---> Removed intermediate container d20fbc6e00c2
+ ---> a8d6d0114663
+Successfully built a8d6d0114663
+Successfully tagged training-job-queue:review-006-poll

@@ -1,0 +1,6 @@
+{
+  "seed": 3,
+  "scheduling": "Started while seed 2 was draining; separate databases, shared PostgreSQL instance and host.",
+  "purpose": "Correctness under faults, not an isolated capacity measurement.",
+  "capacity_benchmarks": "Must wait for both full chaos processes to exit."
+}

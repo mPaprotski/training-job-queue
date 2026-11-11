@@ -1,0 +1,10 @@
+{
+  "all_7050_keys_present": true,
+  "unique_effects_and_results_match": true,
+  "final_snapshot_states": {
+    "queued": 2344,
+    "running": 3,
+    "succeeded": 4703
+  },
+  "note": "Finite drain budget exceeded; checker/latency observations precede process shutdown and can differ by a few jobs."
+}

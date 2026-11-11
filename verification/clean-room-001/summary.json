@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "tested_source_commit": "6f7127910cf6b7a5e05d1d9847e0f51be04be232",
+  "fresh_local_git_clone": true,
+  "checkout_remained_clean": true,
+  "fresh_database_and_automatic_migration": true,
+  "configuration_overrides": [
+    "separate Compose project/image/volume",
+    "API port 18080 to retain normal port 8000",
+    "local output UID/GID"
+  ],
+  "docker_layer_cache": "available; this is a clean checkout/database check, not a claim of a cache-free machine",
+  "api_smoke_passed": true,
+  "integration_tests": 58,
+  "worker_containers": 4,
+  "harness": {
+    "path": "verification/clean-room-001/harness/chaos-20261110T130219Z-seed11-15fdf8ea",
+    "jobs": 1000,
+    "workers": 8,
+    "seed": 11,
+    "sigkills": 8,
+    "states": {
+      "cancelled": 26,
+      "succeeded": 974
+    },
+    "passed": true
+  },
+  "temporary_test_databases_removed": true,
+  "original_stack_healthy": true,
+  "application_and_sql_match_recorded_full_runs": true,
+  "scope": "Final submission verification; separate from the earlier six chaos and five load development experiments."
+}

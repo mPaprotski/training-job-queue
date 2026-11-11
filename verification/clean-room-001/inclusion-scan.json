@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "candidate_files_scanned": 271,
+  "known_secret_pattern_findings": [],
+  "unexpected_private_or_cache_files": [],
+  "largest_file_bytes": 6007903,
+  "local_document_links_checked": 104,
+  "application_and_sql_hashes_unchanged": true,
+  "source_and_build_inputs_unchanged_since_clean_test": true,
+  "historical_raw_results_unchanged": true,
+  "whitespace_check_scope": "Source/documentation; raw stdout/log files retained verbatim."
+}

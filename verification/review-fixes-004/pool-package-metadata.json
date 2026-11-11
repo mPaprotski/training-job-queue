@@ -1,0 +1,13 @@
+{
+  "version": "3.3.3",
+  "requires_python": ">=3.10",
+  "requires_dist": [
+    "typing-extensions>=4.6",
+    "anyio>=4.0; extra == \"test\"",
+    "mypy>=2.1.0; extra == \"test\"",
+    "pproxy>=2.7; extra == \"test\"",
+    "pytest>=6.2.5; extra == \"test\"",
+    "pytest-cov>=3.0; extra == \"test\"",
+    "pytest-randomly>=3.5; extra == \"test\""
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "run_id": "chaos-20261110T210117Z-seed21-cb2d0810",
+    "passed": true,
+    "jobs": 1000,
+    "effects": 976,
+    "states": {
+      "cancelled": 24,
+      "succeeded": 976
+    },
+    "attempts": {
+      "succeeded": 976,
+      "failed": 10,
+      "cancelled": 10,
+      "expired": 2
+    },
+    "sigkills": 10,
+    "elapsed_seconds": 62.803
+  },
+  {
+    "run_id": "chaos-20261110T210241Z-seed22-36ad9483",
+    "passed": true,
+    "jobs": 10000,
+    "effects": 9756,
+    "states": {
+      "cancelled": 244,
+      "succeeded": 9756
+    },
+    "attempts": {
+      "succeeded": 9756,
+      "failed": 191,
+      "cancelled": 115,
+      "expired": 27
+    },
+    "sigkills": 95,
+    "elapsed_seconds": 494.347
+  }
+]

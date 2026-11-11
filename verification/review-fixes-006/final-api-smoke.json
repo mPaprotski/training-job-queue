@@ -1,0 +1,202 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "method": "GET",
+      "path": "/jobs",
+      "status": 200,
+      "body": {
+        "items": [],
+        "next_cursor": null
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/jobs",
+      "status": 201,
+      "body": {
+        "id": "fe37f430-ba0c-409d-b9f3-39e9ebd6e9c8",
+        "idempotency_key": "slot-final-first",
+        "payload": {},
+        "state": "queued",
+        "attempt_no": 0,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-11T08:28:56.604154Z",
+        "started_at": null,
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/jobs",
+      "status": 200,
+      "body": {
+        "id": "fe37f430-ba0c-409d-b9f3-39e9ebd6e9c8",
+        "idempotency_key": "slot-final-first",
+        "payload": {},
+        "state": "queued",
+        "attempt_no": 0,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-11T08:28:56.604154Z",
+        "started_at": null,
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/jobs",
+      "status": 409,
+      "body": {
+        "detail": "Idempotency key already belongs to a different payload"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/jobs",
+      "status": 201,
+      "body": {
+        "id": "9de05009-e651-4763-a3a4-63e6acf4d2c7",
+        "idempotency_key": "slot-final-cancel",
+        "payload": {
+          "simulation": {
+            "duration_seconds": 5
+          }
+        },
+        "state": "queued",
+        "attempt_no": 0,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-11T08:28:56.626928Z",
+        "started_at": null,
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/9de05009-e651-4763-a3a4-63e6acf4d2c7",
+      "status": 200,
+      "body": {
+        "id": "9de05009-e651-4763-a3a4-63e6acf4d2c7",
+        "idempotency_key": "slot-final-cancel",
+        "payload": {
+          "simulation": {
+            "duration_seconds": 5
+          }
+        },
+        "state": "queued",
+        "attempt_no": 0,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-11T08:28:56.626928Z",
+        "started_at": null,
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/9de05009-e651-4763-a3a4-63e6acf4d2c7",
+      "status": 200,
+      "body": {
+        "id": "9de05009-e651-4763-a3a4-63e6acf4d2c7",
+        "idempotency_key": "slot-final-cancel",
+        "payload": {
+          "simulation": {
+            "duration_seconds": 5
+          }
+        },
+        "state": "running",
+        "attempt_no": 1,
+        "max_attempts": 5,
+        "worker_id": "3c76671c5d17:0fbb6904",
+        "lease_expires_at": "2026-11-11T08:29:11.630945Z",
+        "created_at": "2026-11-11T08:28:56.626928Z",
+        "started_at": "2026-11-11T08:28:56.630945Z",
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/jobs/9de05009-e651-4763-a3a4-63e6acf4d2c7/cancel",
+      "status": 200,
+      "body": {
+        "id": "9de05009-e651-4763-a3a4-63e6acf4d2c7",
+        "idempotency_key": "slot-final-cancel",
+        "payload": {
+          "simulation": {
+            "duration_seconds": 5
+          }
+        },
+        "state": "cancelled",
+        "attempt_no": 1,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-11T08:28:56.626928Z",
+        "started_at": "2026-11-11T08:28:56.630945Z",
+        "finished_at": "2026-11-11T08:28:56.697749Z",
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/fe37f430-ba0c-409d-b9f3-39e9ebd6e9c8",
+      "status": 200,
+      "body": {
+        "id": "fe37f430-ba0c-409d-b9f3-39e9ebd6e9c8",
+        "idempotency_key": "slot-final-first",
+        "payload": {},
+        "state": "running",
+        "attempt_no": 1,
+        "max_attempts": 5,
+        "worker_id": "c3c845f851b7:8e10b5ff",
+        "lease_expires_at": "2026-11-11T08:29:11.618953Z",
+        "created_at": "2026-11-11T08:28:56.604154Z",
+        "started_at": "2026-11-11T08:28:56.618953Z",
+        "finished_at": null,
+        "result": null,
+        "error": null
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/jobs/fe37f430-ba0c-409d-b9f3-39e9ebd6e9c8",
+      "status": 200,
+      "body": {
+        "id": "fe37f430-ba0c-409d-b9f3-39e9ebd6e9c8",
+        "idempotency_key": "slot-final-first",
+        "payload": {},
+        "state": "succeeded",
+        "attempt_no": 1,
+        "max_attempts": 5,
+        "worker_id": null,
+        "lease_expires_at": null,
+        "created_at": "2026-11-11T08:28:56.604154Z",
+        "started_at": "2026-11-11T08:28:56.618953Z",
+        "finished_at": "2026-11-11T08:28:56.725562Z",
+        "result": {
+          "job_id": "fe37f430-ba0c-409d-b9f3-39e9ebd6e9c8",
+          "worker_id": "c3c845f851b7:8e10b5ff",
+          "attempt_no": 1
+        },
+        "error": null
+      }
+    }
+  ]
+}

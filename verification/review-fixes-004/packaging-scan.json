@@ -1,0 +1,8 @@
+{
+  "candidate_files": 587,
+  "known_secret_patterns_found": 0,
+  "runtime_caches_or_real_env_files": 0,
+  "largest_file": "verification/review-fixes-003/harness/chaos-20261110T210241Z-seed22-36ad9483/jobs.jsonl",
+  "largest_bytes": 6028810,
+  "scope": "Bounded known-pattern/file-inclusion check, not a guarantee against every secret; local Compose passwords are intentional."
+}

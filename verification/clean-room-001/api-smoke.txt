@@ -1,0 +1,4 @@
+Fresh database and automatic migration: PASS
+Create / retry / conflict / read / execution: PASS
+Running cancellation and repeat: PASS
+Pagination / errors / exactly one effect: PASS

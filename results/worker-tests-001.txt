@@ -1,0 +1,46 @@
+test_cancel_queued_is_repeatable_and_retry_keeps_cancelled (test_api.APITests.test_cancel_queued_is_repeatable_and_retry_keeps_cancelled) ... ok
+test_concurrent_conflicting_payloads (test_api.APITests.test_concurrent_conflicting_payloads) ... ok
+test_concurrent_retries_create_one_job (test_api.APITests.test_concurrent_retries_create_one_job) ... ok
+test_concurrent_running_cancellation_closes_attempt (test_api.APITests.test_concurrent_running_cancellation_closes_attempt) ... ok
+test_create_get_and_retry_after_discarding_response (test_api.APITests.test_create_get_and_retry_after_discarding_response) ... ok
+test_openapi_contract (test_api.APITests.test_openapi_contract) ... ok
+test_pagination_ties_and_state_changes (test_api.APITests.test_pagination_ties_and_state_changes) ... ok
+test_payload_equality_uses_jsonb_semantics (test_api.APITests.test_payload_equality_uses_jsonb_semantics) ... ok
+test_rejects_malformed_cursor_values (test_api.APITests.test_rejects_malformed_cursor_values) ... ok
+test_terminal_jobs_cannot_be_cancelled (test_api.APITests.test_terminal_jobs_cannot_be_cancelled) ... ok
+test_validation_and_unknown_ids (test_api.APITests.test_validation_and_unknown_ids) ... ok
+test_cancellation_interrupts_long_simulation_at_heartbeat (test_processing.ProcessingTests.test_cancellation_interrupts_long_simulation_at_heartbeat) ... ok
+test_cancelled_work_cannot_publish_or_renew (test_processing.ProcessingTests.test_cancelled_work_cannot_publish_or_renew) ... ok
+test_claim_skips_locked_job (test_processing.ProcessingTests.test_claim_skips_locked_job) ... ok
+test_completion_before_cancellation_is_immutable (test_processing.ProcessingTests.test_completion_before_cancellation_is_immutable) ... ok
+test_completion_is_atomic_and_repeat_safe (test_processing.ProcessingTests.test_completion_is_atomic_and_repeat_safe) ... ok
+test_concurrent_recovery_only_recovers_once (test_processing.ProcessingTests.test_concurrent_recovery_only_recovers_once) ... ok
+test_effect_write_failure_rolls_back_attempt_and_job (test_processing.ProcessingTests.test_effect_write_failure_rolls_back_attempt_and_job) ... ok
+test_eight_concurrent_claims_have_one_winner (test_processing.ProcessingTests.test_eight_concurrent_claims_have_one_winner) ... ok
+test_expired_attempt_cannot_renew_complete_or_fail (test_processing.ProcessingTests.test_expired_attempt_cannot_renew_complete_or_fail) ... ok
+test_expiry_exhausts_attempt_budget (test_processing.ProcessingTests.test_expiry_exhausts_attempt_budget) ... ok
+test_final_state_write_failure_rolls_back_inserted_effect (test_processing.ProcessingTests.test_final_state_write_failure_rolls_back_inserted_effect) ... ok
+test_four_real_worker_processes_drain_queue (test_processing.ProcessingTests.test_four_real_worker_processes_drain_queue) ... ok
+test_heartbeat_requires_current_owner_and_token (test_processing.ProcessingTests.test_heartbeat_requires_current_owner_and_token) ... ok
+test_live_lease_is_not_recovered (test_processing.ProcessingTests.test_live_lease_is_not_recovered) ... ok
+test_long_execution_renews_lease (test_processing.ProcessingTests.test_long_execution_renews_lease) ... ok
+test_permanent_failure_and_retry_budget (test_processing.ProcessingTests.test_permanent_failure_and_retry_budget) ... ok
+test_recovery_fences_old_token_even_with_same_worker_id (test_processing.ProcessingTests.test_recovery_fences_old_token_even_with_same_worker_id) ... ok
+test_retryable_failures_then_success (test_processing.ProcessingTests.test_retryable_failures_then_success) ... ok
+test_shutdown_leaves_job_for_lease_recovery (test_processing.ProcessingTests.test_shutdown_leaves_job_for_lease_recovery) ... ok
+test_sigkill_then_replacement_recovers_job (test_processing.ProcessingTests.test_sigkill_then_replacement_recovers_job) ... ok
+test_attempt_shapes_and_identity (test_schema.SchemaTests.test_attempt_shapes_and_identity) ... ok
+test_cancel_queued_and_fail_running (test_schema.SchemaTests.test_cancel_queued_and_fail_running) ... ok
+test_concurrent_duplicate_keys (test_schema.SchemaTests.test_concurrent_duplicate_keys) ... ok
+test_duplicate_effect (test_schema.SchemaTests.test_duplicate_effect) ... ok
+test_effect_requires_existing_attempt (test_schema.SchemaTests.test_effect_requires_existing_attempt) ... ok
+test_fresh_migration_and_rerun (test_schema.SchemaTests.test_fresh_migration_and_rerun) ... ok
+test_invalid_job_shapes (test_schema.SchemaTests.test_invalid_job_shapes) ... ok
+test_only_one_running_attempt (test_schema.SchemaTests.test_only_one_running_attempt) ... ok
+test_retry_after_expired_attempt (test_schema.SchemaTests.test_retry_after_expired_attempt) ... ok
+test_valid_successful_lifecycle (test_schema.SchemaTests.test_valid_successful_lifecycle) ... ok
+
+----------------------------------------------------------------------
+Ran 41 tests in 27.056s
+
+OK

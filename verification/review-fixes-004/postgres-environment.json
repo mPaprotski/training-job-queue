@@ -1,0 +1,1 @@
+{"version" : "PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit", "fsync" : "on", "full_page_writes" : "on", "synchronous_commit" : "on", "max_connections" : "100"}

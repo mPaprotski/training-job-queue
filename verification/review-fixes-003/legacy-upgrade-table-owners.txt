@@ -1,0 +1,4 @@
+job_attempts|queue_migrator
+job_effects|queue_migrator
+jobs|queue_migrator
+schema_migrations|queue_migrator

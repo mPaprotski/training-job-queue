@@ -1,0 +1,15 @@
+Run artifacts: /out/chaos-20261110T210117Z-seed21-cb2d0810
+{"phase": "faults", "elapsed": 1.9, "states": {"queued": 3}, "sigkills": 0}
+{"phase": "faults", "elapsed": 6.9, "states": {"cancelled": 5, "running": 4, "queued": 192, "succeeded": 20}, "sigkills": 2}
+{"phase": "faults", "elapsed": 12.2, "states": {"cancelled": 11, "running": 5, "queued": 371, "succeeded": 93}, "sigkills": 4}
+{"phase": "faults", "elapsed": 17.1, "states": {"succeeded": 145, "cancelled": 18, "queued": 521, "running": 5}, "sigkills": 7}
+{"phase": "faults", "elapsed": 22.1, "states": {"succeeded": 199, "cancelled": 23, "queued": 675, "running": 4}, "sigkills": 9}
+{"phase": "drain", "elapsed": 24.3, "states": {"succeeded": 232, "cancelled": 24, "queued": 739, "running": 5}, "sigkills": 10}
+{"phase": "drain", "elapsed": 29.4, "states": {"succeeded": 340, "cancelled": 24, "queued": 631, "running": 5}, "sigkills": 10}
+{"phase": "drain", "elapsed": 34.4, "states": {"succeeded": 471, "cancelled": 24, "queued": 500, "running": 5}, "sigkills": 10}
+{"phase": "drain", "elapsed": 39.7, "states": {"succeeded": 598, "cancelled": 24, "queued": 372, "running": 6}, "sigkills": 10}
+{"phase": "drain", "elapsed": 44.8, "states": {"succeeded": 714, "cancelled": 24, "queued": 255, "running": 7}, "sigkills": 10}
+{"phase": "drain", "elapsed": 49.9, "states": {"succeeded": 822, "cancelled": 24, "queued": 147, "running": 7}, "sigkills": 10}
+{"phase": "drain", "elapsed": 55.0, "states": {"succeeded": 934, "cancelled": 24, "queued": 35, "running": 7}, "sigkills": 10}
+{"phase": "drain", "elapsed": 60.4, "states": {"cancelled": 24, "succeeded": 976}, "sigkills": 10}
+{"run_id": "chaos-20261110T210117Z-seed21-cb2d0810", "passed": true, "expected_jobs": 1000, "actual_jobs": 1000, "states": {"cancelled": 24, "succeeded": 976}, "attempts": {"succeeded": 976, "failed": 10, "cancelled": 10, "expired": 2}, "effects": 976, "violations": [], "counters": {"unique_posts": 1000, "repeated_posts": 115, "cancel_accepted": 24, "cancel_requests": 39, "sigkills": 10, "cancel_running_observed": 19, "cancel_too_late": 15, "sigkills_with_running_job": 3}, "errors": [], "database": "chaos_780e9bfb339443b980c81b06283f0d2e", "database_retained": false, "elapsed_seconds": 62.803}

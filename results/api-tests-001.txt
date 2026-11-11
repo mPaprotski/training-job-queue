@@ -1,0 +1,26 @@
+test_cancel_queued_is_repeatable_and_retry_keeps_cancelled (test_api.APITests.test_cancel_queued_is_repeatable_and_retry_keeps_cancelled) ... ok
+test_concurrent_conflicting_payloads (test_api.APITests.test_concurrent_conflicting_payloads) ... ok
+test_concurrent_retries_create_one_job (test_api.APITests.test_concurrent_retries_create_one_job) ... ok
+test_concurrent_running_cancellation_closes_attempt (test_api.APITests.test_concurrent_running_cancellation_closes_attempt) ... ok
+test_create_get_and_retry_after_discarding_response (test_api.APITests.test_create_get_and_retry_after_discarding_response) ... ok
+test_openapi_contract (test_api.APITests.test_openapi_contract) ... ok
+test_pagination_ties_and_state_changes (test_api.APITests.test_pagination_ties_and_state_changes) ... ok
+test_payload_equality_uses_jsonb_semantics (test_api.APITests.test_payload_equality_uses_jsonb_semantics) ... ok
+test_rejects_malformed_cursor_values (test_api.APITests.test_rejects_malformed_cursor_values) ... ok
+test_terminal_jobs_cannot_be_cancelled (test_api.APITests.test_terminal_jobs_cannot_be_cancelled) ... ok
+test_validation_and_unknown_ids (test_api.APITests.test_validation_and_unknown_ids) ... ok
+test_attempt_shapes_and_identity (test_schema.SchemaTests.test_attempt_shapes_and_identity) ... ok
+test_cancel_queued_and_fail_running (test_schema.SchemaTests.test_cancel_queued_and_fail_running) ... ok
+test_concurrent_duplicate_keys (test_schema.SchemaTests.test_concurrent_duplicate_keys) ... ok
+test_duplicate_effect (test_schema.SchemaTests.test_duplicate_effect) ... ok
+test_effect_requires_existing_attempt (test_schema.SchemaTests.test_effect_requires_existing_attempt) ... ok
+test_fresh_migration_and_rerun (test_schema.SchemaTests.test_fresh_migration_and_rerun) ... ok
+test_invalid_job_shapes (test_schema.SchemaTests.test_invalid_job_shapes) ... ok
+test_only_one_running_attempt (test_schema.SchemaTests.test_only_one_running_attempt) ... ok
+test_retry_after_expired_attempt (test_schema.SchemaTests.test_retry_after_expired_attempt) ... ok
+test_valid_successful_lifecycle (test_schema.SchemaTests.test_valid_successful_lifecycle) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 7.267s
+
+OK
